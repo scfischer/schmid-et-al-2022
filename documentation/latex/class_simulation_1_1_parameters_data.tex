@@ -1,0 +1,254 @@
+\hypertarget{class_simulation_1_1_parameters_data}{}\doxysection{Simulation.\+Parameters\+Data Class Reference}
+\label{class_simulation_1_1_parameters_data}\index{Simulation.ParametersData@{Simulation.ParametersData}}
+
+
+This script holds the values for parameters which can be adjusted by the user, makes them accessible in a single location -\/ and independent from GUI components -\/ to all other scripts needing those values, and calculates some derived values that depend directly on these parameters.  
+
+
+Inheritance diagram for Simulation.\+Parameters\+Data\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_simulation_1_1_parameters_data}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_simulation_1_1_parameters_data_1_1_parameter_values}{Parameter\+Values}}
+\begin{DoxyCompactList}\small\item\em Struct with all paramter values, for moving them in bulk. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_accf7b8dfb83eeeac4a12de65c38e9903}\label{class_simulation_1_1_parameters_data_accf7b8dfb83eeeac4a12de65c38e9903}} 
+delegate void {\bfseries Update\+Values} ()
+\item 
+\mbox{\hyperlink{struct_simulation_1_1_parameters_data_1_1_parameter_values}{Parameter\+Values}} \mbox{\hyperlink{class_simulation_1_1_parameters_data_abf372452ec9d8b84616605e57c6687b1}{Get\+All\+Parameters}} ()
+\begin{DoxyCompactList}\small\item\em Get all current parameter values defining the simulation at once in a single struct. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_simulation_1_1_parameters_data_1_1_parameter_values}{Parameter\+Values}} \mbox{\hyperlink{class_simulation_1_1_parameters_data_accf7e37534845e490d7f8d23680ca431}{Get\+Defaults}} ()
+\begin{DoxyCompactList}\small\item\em Get the default parameter values set in the \mbox{\hyperlink{class_simulation_1_1_parameters_data}{Parameters\+Data}} asset used. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulation_1_1_parameters_data_ab6c92b3e2ed3623e0ab8eae6a6b9e178}{Set\+Current\+Values}} (\mbox{\hyperlink{struct_simulation_1_1_parameters_data_1_1_parameter_values}{Parameter\+Values}} values)
+\begin{DoxyCompactList}\small\item\em Accept a struct of parameter values to set the current parameters to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_a2a807a3c0e2f8dca8a2a5d87f1313eee}\label{class_simulation_1_1_parameters_data_a2a807a3c0e2f8dca8a2a5d87f1313eee}} 
+void {\bfseries Reset\+To\+Defaults} ()
+\begin{DoxyCompactList}\small\item\em Reset the current parameter settings for the current simulation instance to the defaults defined by its Paramters\+Data asset. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_a7815b1093e03a831f8b9647e8f9c6a02}\label{class_simulation_1_1_parameters_data_a7815b1093e03a831f8b9647e8f9c6a02}} 
+void {\bfseries On\+After\+Deserialize} ()
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_a4460d6f77869d643ae8dd5f51b873370}\label{class_simulation_1_1_parameters_data_a4460d6f77869d643ae8dd5f51b873370}} 
+void {\bfseries On\+Before\+Serialize} ()
+\item 
+void \mbox{\hyperlink{class_simulation_1_1_parameters_data_acd399175582f2ddcd052dc1998a61d77}{Subscribe}} (Update\+Values method)
+\begin{DoxyCompactList}\small\item\em Subscribe a method to be called whenever \mbox{\hyperlink{class_simulation_1_1_parameters_data}{Parameters\+Data}} updates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulation_1_1_parameters_data_a54e0b25c6f357c92f728592711ef3030}{Unsubscribe}} (Update\+Values method)
+\begin{DoxyCompactList}\small\item\em Unsubscribe a method from getting called on \mbox{\hyperlink{class_simulation_1_1_parameters_data}{Parameters\+Data}} changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_a5237356c76108b6b120f58793d6c5de1}\label{class_simulation_1_1_parameters_data_a5237356c76108b6b120f58793d6c5de1}} 
+float {\bfseries Number\+Capillaries} = 52
+\begin{DoxyCompactList}\small\item\em Average number of capillary paths making up the capillary network around the alveolus. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{class_simulation_1_1_parameters_data_a131f36ff26927a6b8ba4b6aae6c54bc8}{Max\+Blood\+Volume}} = 808000
+\begin{DoxyCompactList}\small\item\em Blood volume when the capillary network around an alveolus is completely perfused \mbox{[}µm³\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_af193b239f6bb8bbd226ac46ed8e87159}\label{class_simulation_1_1_parameters_data_af193b239f6bb8bbd226ac46ed8e87159}} 
+string {\bfseries Description}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_ab62ff59b9678f42991dcfac38d831500}\label{class_simulation_1_1_parameters_data_ab62ff59b9678f42991dcfac38d831500}} 
+float {\bfseries oxygen\+Ratio}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Percentage of oxygen in the air. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_a10299780745b6e90f2e95f96888189f7}\label{class_simulation_1_1_parameters_data_a10299780745b6e90f2e95f96888189f7}} 
+float {\bfseries co2\+Ratio}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Percentage of carbon dioxide in the air. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_a4391d83e62f10d4da69c0036d2ad01a9}\label{class_simulation_1_1_parameters_data_a4391d83e62f10d4da69c0036d2ad01a9}} 
+float {\bfseries dm\+O2}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Membrane Diffusing Capacity\char`\"{} for oxygen in the lung -\/ DMO2. Depends on surface area, barrier thickness and permeability coefficient. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_a5f60e29aed723f4056176e927dbbf3e0}\label{class_simulation_1_1_parameters_data_a5f60e29aed723f4056176e927dbbf3e0}} 
+float {\bfseries capillary\+Recruitment}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Percentage of capillaries perfused. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_a83abd6aa5c6fb28262afddd336deb87b}\label{class_simulation_1_1_parameters_data_a83abd6aa5c6fb28262afddd336deb87b}} 
+float {\bfseries capillaries\+Perfused}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Number of capillaries currently perfused. \end{DoxyCompactList}\item 
+float? \mbox{\hyperlink{class_simulation_1_1_parameters_data_a21903ad2394b7fb70254d0ee9799f176}{atmospheric\+Pressure}}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Setting for atmospheric pressure. \end{DoxyCompactList}\item 
+float? \mbox{\hyperlink{class_simulation_1_1_parameters_data_ae6b91b73fa80decf6eaefceae7dea9d1}{alveolar\+Pp\+O2}}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Setting for alveolar p\+O2. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_ab4ecaf1aa4f230601d9f58779f6dcb33}\label{class_simulation_1_1_parameters_data_ab4ecaf1aa4f230601d9f58779f6dcb33}} 
+float? {\bfseries blood\+Pp\+O2}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Setting for blood p\+O2. \end{DoxyCompactList}\item 
+float? \mbox{\hyperlink{class_simulation_1_1_parameters_data_a70e13728a1e11e825c5a960a96919199}{alveolar\+Pp\+Co2}}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Setting for alveolar p\+CO2. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_a21770d216ae5bea1d883ebe45f28c6fe}\label{class_simulation_1_1_parameters_data_a21770d216ae5bea1d883ebe45f28c6fe}} 
+float? {\bfseries blood\+Pp\+Co2}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Setting for blood p\+CO2. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_a41c466c7c2f776ddabf99b013ca07eeb}\label{class_simulation_1_1_parameters_data_a41c466c7c2f776ddabf99b013ca07eeb}} 
+float? {\bfseries bloodp\+HRBC}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Setting for pH inside red blood cells. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_a36ccbd57d170d1be976724046f372ff2}\label{class_simulation_1_1_parameters_data_a36ccbd57d170d1be976724046f372ff2}} 
+float? {\bfseries blood\+Volume}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Setting for blood volume. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_acd652d112194ed5abc9d885d0594d06e}\label{class_simulation_1_1_parameters_data_acd652d112194ed5abc9d885d0594d06e}} 
+float? {\bfseries blood\+Flow\+Velocity}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Setting for blood flow velocity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_a25aa1bc2902c2ac7973dc330e173fe0d}\label{class_simulation_1_1_parameters_data_a25aa1bc2902c2ac7973dc330e173fe0d}} 
+float? {\bfseries blood\+Temperature}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Setting for blood temperature. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_aa8f9b2aadb9fbcd680d90a8a760fafb0}\label{class_simulation_1_1_parameters_data_aa8f9b2aadb9fbcd680d90a8a760fafb0}} 
+float? {\bfseries concentration\+DPG}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Setting for concentration of \mbox{[}DPG\mbox{]} in red blood cells. \end{DoxyCompactList}\item 
+float? \mbox{\hyperlink{class_simulation_1_1_parameters_data_a7286a0fcf2166ded260a474b25fd09eb}{surface\+Area}}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Setting for alveolar surface area. \end{DoxyCompactList}\item 
+float? \mbox{\hyperlink{class_simulation_1_1_parameters_data_aad53fe847ed5c08729fe349a90a86f62}{barrier\+Thickness}}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Setting for thickness of the tissue barrier. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This script holds the values for parameters which can be adjusted by the user, makes them accessible in a single location -\/ and independent from GUI components -\/ to all other scripts needing those values, and calculates some derived values that depend directly on these parameters. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_abf372452ec9d8b84616605e57c6687b1}\label{class_simulation_1_1_parameters_data_abf372452ec9d8b84616605e57c6687b1}} 
+\index{Simulation.ParametersData@{Simulation.ParametersData}!GetAllParameters@{GetAllParameters}}
+\index{GetAllParameters@{GetAllParameters}!Simulation.ParametersData@{Simulation.ParametersData}}
+\doxysubsubsection{\texorpdfstring{GetAllParameters()}{GetAllParameters()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_simulation_1_1_parameters_data_1_1_parameter_values}{Parameter\+Values}} Simulation.\+Parameters\+Data.\+Get\+All\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all current parameter values defining the simulation at once in a single struct. 
+
+\begin{DoxyReturn}{Returns}
+A struct containing the current parameter values used by the simulation instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_accf7e37534845e490d7f8d23680ca431}\label{class_simulation_1_1_parameters_data_accf7e37534845e490d7f8d23680ca431}} 
+\index{Simulation.ParametersData@{Simulation.ParametersData}!GetDefaults@{GetDefaults}}
+\index{GetDefaults@{GetDefaults}!Simulation.ParametersData@{Simulation.ParametersData}}
+\doxysubsubsection{\texorpdfstring{GetDefaults()}{GetDefaults()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_simulation_1_1_parameters_data_1_1_parameter_values}{Parameter\+Values}} Simulation.\+Parameters\+Data.\+Get\+Defaults (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the default parameter values set in the \mbox{\hyperlink{class_simulation_1_1_parameters_data}{Parameters\+Data}} asset used. 
+
+\begin{DoxyReturn}{Returns}
+A struct containing the default values for all parameters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_ab6c92b3e2ed3623e0ab8eae6a6b9e178}\label{class_simulation_1_1_parameters_data_ab6c92b3e2ed3623e0ab8eae6a6b9e178}} 
+\index{Simulation.ParametersData@{Simulation.ParametersData}!SetCurrentValues@{SetCurrentValues}}
+\index{SetCurrentValues@{SetCurrentValues}!Simulation.ParametersData@{Simulation.ParametersData}}
+\doxysubsubsection{\texorpdfstring{SetCurrentValues()}{SetCurrentValues()}}
+{\footnotesize\ttfamily void Simulation.\+Parameters\+Data.\+Set\+Current\+Values (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_simulation_1_1_parameters_data_1_1_parameter_values}{Parameter\+Values}}}]{values }\end{DoxyParamCaption})}
+
+
+
+Accept a struct of parameter values to set the current parameters to. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em values} & Struct of parameter values to set.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_acd399175582f2ddcd052dc1998a61d77}\label{class_simulation_1_1_parameters_data_acd399175582f2ddcd052dc1998a61d77}} 
+\index{Simulation.ParametersData@{Simulation.ParametersData}!Subscribe@{Subscribe}}
+\index{Subscribe@{Subscribe}!Simulation.ParametersData@{Simulation.ParametersData}}
+\doxysubsubsection{\texorpdfstring{Subscribe()}{Subscribe()}}
+{\footnotesize\ttfamily void Simulation.\+Parameters\+Data.\+Subscribe (\begin{DoxyParamCaption}\item[{Update\+Values}]{method }\end{DoxyParamCaption})}
+
+
+
+Subscribe a method to be called whenever \mbox{\hyperlink{class_simulation_1_1_parameters_data}{Parameters\+Data}} updates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method} & Method to be called.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_a54e0b25c6f357c92f728592711ef3030}\label{class_simulation_1_1_parameters_data_a54e0b25c6f357c92f728592711ef3030}} 
+\index{Simulation.ParametersData@{Simulation.ParametersData}!Unsubscribe@{Unsubscribe}}
+\index{Unsubscribe@{Unsubscribe}!Simulation.ParametersData@{Simulation.ParametersData}}
+\doxysubsubsection{\texorpdfstring{Unsubscribe()}{Unsubscribe()}}
+{\footnotesize\ttfamily void Simulation.\+Parameters\+Data.\+Unsubscribe (\begin{DoxyParamCaption}\item[{Update\+Values}]{method }\end{DoxyParamCaption})}
+
+
+
+Unsubscribe a method from getting called on \mbox{\hyperlink{class_simulation_1_1_parameters_data}{Parameters\+Data}} changes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method} & Method to unsubscribe.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_a131f36ff26927a6b8ba4b6aae6c54bc8}\label{class_simulation_1_1_parameters_data_a131f36ff26927a6b8ba4b6aae6c54bc8}} 
+\index{Simulation.ParametersData@{Simulation.ParametersData}!MaxBloodVolume@{MaxBloodVolume}}
+\index{MaxBloodVolume@{MaxBloodVolume}!Simulation.ParametersData@{Simulation.ParametersData}}
+\doxysubsubsection{\texorpdfstring{MaxBloodVolume}{MaxBloodVolume}}
+{\footnotesize\ttfamily const int Simulation.\+Parameters\+Data.\+Max\+Blood\+Volume = 808000\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Blood volume when the capillary network around an alveolus is completely perfused \mbox{[}µm³\mbox{]}. 
+
+The value was derived from results published in (Ochs et al., 2004; Gehr et al., 1978) 
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_simulation_1_1_parameters_data_a70e13728a1e11e825c5a960a96919199}\label{class_simulation_1_1_parameters_data_a70e13728a1e11e825c5a960a96919199}} 
+\index{Simulation.ParametersData@{Simulation.ParametersData}!alveolarPpCo2@{alveolarPpCo2}}
+\index{alveolarPpCo2@{alveolarPpCo2}!Simulation.ParametersData@{Simulation.ParametersData}}
+\doxysubsubsection{\texorpdfstring{alveolarPpCo2}{alveolarPpCo2}}
+{\footnotesize\ttfamily float? Simulation.\+Parameters\+Data.\+alveolar\+Pp\+Co2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Setting for alveolar p\+CO2. 
+
+From the partial pressure, the ratio of carbon dioxide in the air mixture (\mbox{\hyperlink{class_simulation_1_1_parameters_data_a10299780745b6e90f2e95f96888189f7}{co2\+Ratio}}) is derived. \mbox{\Hypertarget{class_simulation_1_1_parameters_data_ae6b91b73fa80decf6eaefceae7dea9d1}\label{class_simulation_1_1_parameters_data_ae6b91b73fa80decf6eaefceae7dea9d1}} 
+\index{Simulation.ParametersData@{Simulation.ParametersData}!alveolarPpO2@{alveolarPpO2}}
+\index{alveolarPpO2@{alveolarPpO2}!Simulation.ParametersData@{Simulation.ParametersData}}
+\doxysubsubsection{\texorpdfstring{alveolarPpO2}{alveolarPpO2}}
+{\footnotesize\ttfamily float? Simulation.\+Parameters\+Data.\+alveolar\+Pp\+O2\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Setting for alveolar p\+O2. 
+
+From the partial pressure, the ratio of oxygen in the air mixture (\mbox{\hyperlink{class_simulation_1_1_parameters_data_ab62ff59b9678f42991dcfac38d831500}{oxygen\+Ratio}}) is derived. \mbox{\Hypertarget{class_simulation_1_1_parameters_data_a21903ad2394b7fb70254d0ee9799f176}\label{class_simulation_1_1_parameters_data_a21903ad2394b7fb70254d0ee9799f176}} 
+\index{Simulation.ParametersData@{Simulation.ParametersData}!atmosphericPressure@{atmosphericPressure}}
+\index{atmosphericPressure@{atmosphericPressure}!Simulation.ParametersData@{Simulation.ParametersData}}
+\doxysubsubsection{\texorpdfstring{atmosphericPressure}{atmosphericPressure}}
+{\footnotesize\ttfamily float? Simulation.\+Parameters\+Data.\+atmospheric\+Pressure\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Setting for atmospheric pressure. 
+
+When atmospheric pressure changes, the alveolar partial pressures of oxygen \mbox{\hyperlink{class_simulation_1_1_parameters_data_ae6b91b73fa80decf6eaefceae7dea9d1}{alveolar\+Pp\+O2}} and carbon dioxide \mbox{\hyperlink{class_simulation_1_1_parameters_data_a70e13728a1e11e825c5a960a96919199}{alveolar\+Pp\+Co2}} are adjusted. \mbox{\Hypertarget{class_simulation_1_1_parameters_data_aad53fe847ed5c08729fe349a90a86f62}\label{class_simulation_1_1_parameters_data_aad53fe847ed5c08729fe349a90a86f62}} 
+\index{Simulation.ParametersData@{Simulation.ParametersData}!barrierThickness@{barrierThickness}}
+\index{barrierThickness@{barrierThickness}!Simulation.ParametersData@{Simulation.ParametersData}}
+\doxysubsubsection{\texorpdfstring{barrierThickness}{barrierThickness}}
+{\footnotesize\ttfamily float? Simulation.\+Parameters\+Data.\+barrier\+Thickness\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Setting for thickness of the tissue barrier. 
+
+When barrier thickness changes, the membrane diffusion capacity (\mbox{\hyperlink{class_simulation_1_1_parameters_data_a4391d83e62f10d4da69c0036d2ad01a9}{dm\+O2}}) is adjusted. \mbox{\Hypertarget{class_simulation_1_1_parameters_data_a7286a0fcf2166ded260a474b25fd09eb}\label{class_simulation_1_1_parameters_data_a7286a0fcf2166ded260a474b25fd09eb}} 
+\index{Simulation.ParametersData@{Simulation.ParametersData}!surfaceArea@{surfaceArea}}
+\index{surfaceArea@{surfaceArea}!Simulation.ParametersData@{Simulation.ParametersData}}
+\doxysubsubsection{\texorpdfstring{surfaceArea}{surfaceArea}}
+{\footnotesize\ttfamily float? Simulation.\+Parameters\+Data.\+surface\+Area\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Setting for alveolar surface area. 
+
+When alveolar surface area changes, the membrane diffusion capacity (\mbox{\hyperlink{class_simulation_1_1_parameters_data_a4391d83e62f10d4da69c0036d2ad01a9}{dm\+O2}}) is adjusted. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Simulation/\+Parameters/Parameters\+Data.\+cs\end{DoxyCompactItemize}

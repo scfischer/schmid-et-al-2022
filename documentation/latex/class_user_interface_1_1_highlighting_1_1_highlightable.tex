@@ -1,0 +1,78 @@
+\hypertarget{class_user_interface_1_1_highlighting_1_1_highlightable}{}\doxysection{User\+Interface.\+Highlighting.\+Highlightable Class Reference}
+\label{class_user_interface_1_1_highlighting_1_1_highlightable}\index{UserInterface.Highlighting.Highlightable@{UserInterface.Highlighting.Highlightable}}
+
+
+Makes Game\+Objects eligible highlighting targets and puts them on the respective layer when they should be highlighted.  
+
+
+Inheritance diagram for User\+Interface.\+Highlighting.\+Highlightable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_user_interface_1_1_highlighting_1_1_highlightable}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_highlightable_a204f383d88ab9a23f64d8cd21a286697}{Enable\+Highlights}} (string parameters=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Turn highlighting on. Use {\ttfamily parameters} to specify sub-\/elements, or empty for any/all. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_highlightable_a39cddde24088bb661a525ea07b9ece80}{Disable\+Highlights}} (string parameters=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Turn highlighting off. Use {\ttfamily parameters} to specify sub-\/elements, or empty for any/all. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_highlighting_1_1_highlightable_a44a8626d0ac7a92753a6f4db3c64cf4e}\label{class_user_interface_1_1_highlighting_1_1_highlightable_a44a8626d0ac7a92753a6f4db3c64cf4e}} 
+bool {\bfseries affect\+Children} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Makes Game\+Objects eligible highlighting targets and puts them on the respective layer when they should be highlighted. 
+
+Part of the highlighting system, this script goes into game objects which should be subject to being highlighted. It creates a valid target for associations assigned to the instance\textquotesingle{}s \mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_instance_highlight_targets}{Instance\+Highlight\+Targets}}. When highlighting is triggered and associated with a Game\+Object with this script, the Game\+Object is placed on the Highlight layer and rendered on a different camera, which allows exemption from post processing effects (e.\+g. fading out everything else to leave this object more visible). ~\newline
+ the affect\+Children setting can be used to toggle between including all child Game\+Objects in the highlighting, or only this one. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_interface_1_1_highlighting_1_1_highlightable_a39cddde24088bb661a525ea07b9ece80}\label{class_user_interface_1_1_highlighting_1_1_highlightable_a39cddde24088bb661a525ea07b9ece80}} 
+\index{UserInterface.Highlighting.Highlightable@{UserInterface.Highlighting.Highlightable}!DisableHighlights@{DisableHighlights}}
+\index{DisableHighlights@{DisableHighlights}!UserInterface.Highlighting.Highlightable@{UserInterface.Highlighting.Highlightable}}
+\doxysubsubsection{\texorpdfstring{DisableHighlights()}{DisableHighlights()}}
+{\footnotesize\ttfamily void User\+Interface.\+Highlighting.\+Highlightable.\+Disable\+Highlights (\begin{DoxyParamCaption}\item[{string}]{parameters = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Turn highlighting off. Use {\ttfamily parameters} to specify sub-\/elements, or empty for any/all. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & Additional instructions, e.\+g. for un-\/highlighting only a subset of elements governed by the implementing script.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_user_interface_1_1_highlighting_1_1_i_highlightable_a9877baa2beee1870faad754120a637ea}{User\+Interface.\+Highlighting.\+IHighlightable}}.
+
+\mbox{\Hypertarget{class_user_interface_1_1_highlighting_1_1_highlightable_a204f383d88ab9a23f64d8cd21a286697}\label{class_user_interface_1_1_highlighting_1_1_highlightable_a204f383d88ab9a23f64d8cd21a286697}} 
+\index{UserInterface.Highlighting.Highlightable@{UserInterface.Highlighting.Highlightable}!EnableHighlights@{EnableHighlights}}
+\index{EnableHighlights@{EnableHighlights}!UserInterface.Highlighting.Highlightable@{UserInterface.Highlighting.Highlightable}}
+\doxysubsubsection{\texorpdfstring{EnableHighlights()}{EnableHighlights()}}
+{\footnotesize\ttfamily void User\+Interface.\+Highlighting.\+Highlightable.\+Enable\+Highlights (\begin{DoxyParamCaption}\item[{string}]{parameters = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Turn highlighting on. Use {\ttfamily parameters} to specify sub-\/elements, or empty for any/all. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parameters} & Additional instructions, e.\+g. for highlighting only a subset of elements governed by the implementing script.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_user_interface_1_1_highlighting_1_1_i_highlightable_a70e2e912e328c2b89e1aae6b8754c8ce}{User\+Interface.\+Highlighting.\+IHighlightable}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+User\+Interface/\+Highlighting/\+Scripts/Highlightable.\+cs\end{DoxyCompactItemize}

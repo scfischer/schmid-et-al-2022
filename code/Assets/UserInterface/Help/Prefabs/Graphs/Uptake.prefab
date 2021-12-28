@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7756238334568130606
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 775.05255
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 431.3128
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5886144223750974180, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_Name
+      value: Uptake
+      objectReference: {fileID: 0}
+    - target: {fileID: 7509626965609379130, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_isRightToLeft
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663996091368063692, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_text
+      value: 'This graph tracks the total oxygen uptake of capillaries surrounding
+        the alveolus over time, i.e. the delta between the inflowing and outflowing
+        blood oxygen.
+
+
+        Pulmonary diffusion capacity for oxygen (DLO2):
+
+        DLO2
+        describes the lungs total capacity to transport oxygen from the air to the
+        blood. In the calculations for DLO2, the oxygen consumption (oxygen uptake
+        over time in minutes) is determined. By multiplying the oxygen uptake of
+        this simulation by the total number of alveoli (Ochs et al. 2004), the result
+        is scaled up to the entire lung. The simulation runs on a scale of seconds.
+        At the beginning, oxygen uptake thus is divided by very small time values
+        resulting unnaturally large values of oxygen consumption and thus also of
+        DLO2. The longer the simulation runs without changing the parameter values,
+        the more DLO2 approaches a realistic result. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790693179741456995, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_text
+      value: Oxygen Uptake
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6359fe8e0433d514890f238e3a9f09f0, type: 3}

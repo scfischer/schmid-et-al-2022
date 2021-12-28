@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c46da48c9bc894f92898fe564b0645, type: 3}
+  m_Name: ARDS
+  m_EditorClassIdentifier: 
+  description: "Acute Respiratory Distress Syndrome (ARDS) is a type of \nrespiratory
+    failure typically provoked by an acute injury \nleading to a widespread inflammation
+    of the lungs.\n\nIt is characterized by leaking of fluids into the alveoli. \nThis
+    also implies the dilution of surfactant: \nA mixture of lipids lining the inner
+    surface of the alveolus \nand reducing its surface tension, thereby keeping it
+    \nfrom collapsing. When fluid accumulation in the alveoli \nleads to dilution
+    of surfactant, the surface tension increases \nand causes alveoli to collapse
+    (atelectasis). \nARDS is usually treated with mechanical ventilation.\r\n\nDirect
+    causes of ARDS can be for example pneumonia, \nchest trauma or aspiration.\r"
+  atmosphericPressureDefault: 760
+  alveolarPpO2Default: 100
+  bloodPpO2Default: 40
+  alveolarPpCo2Default: 40
+  bloodPpCo2Default: 45
+  bloodpHRBCDefault: 7.24
+  bloodVolumeDefault: 404000
+  bloodFlowVelocityDefault: 1
+  bloodTemperatureDefault: 40
+  concentrationDPGDefault: 4.65
+  surfaceAreaDefault: 0
+  barrierThicknessDefault: 1.11
+  alveolarPpH2O: 45
+  NumberCapillaries: 52

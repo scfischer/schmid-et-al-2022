@@ -1,0 +1,200 @@
+\hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure}{}\doxysection{Simulation.\+Systems.\+Gas\+Exchange.\+Partial\+Pressure Class Reference}
+\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure}\index{Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}}
+
+
+This class handles all calculations for partial pressures of respiratory gases in the blood across the capillary. It determines the pressure gradient of gases between capillary sections and alveolar space and calculates the resulting diffusion of gas molecules, as well as values deriving from that for visualization purposes.  
+
+
+Inheritance diagram for Simulation.\+Systems.\+Gas\+Exchange.\+Partial\+Pressure\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a090978264d9d24b436002317ac944590}{Subscribe}} (Parameters\+Data.\+Update\+Values method)
+\begin{DoxyCompactList}\small\item\em Subscribe a method to be called whenever \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure}{Partial\+Pressure}} updates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_ad830c8e383b845a8e30da3687566056a}{Unsubscribe}} (Parameters\+Data.\+Update\+Values method)
+\begin{DoxyCompactList}\small\item\em Unsubscribe a method from getting called on \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure}{Partial\+Pressure}} changes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a6e0fd9e94226484b256d5b505ab9edd5}{Sphere\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Calculates what volume one rendered gas sphere represents respectively. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a3053b915dcae317fc7da304c23ab8b84}{Handle\+Reset}} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance)
+\item 
+override void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_abb71b311e2d422da33165ed1e80fdcab}{Handle\+Parameters\+Updated}} ()
+\begin{DoxyCompactList}\small\item\em Recalculate partial pressures and derived values, then alert all subscribers to those updates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a7d43981efc2780b71ff5c65660ced6c4}{number\+Sections}} = 50\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Number of sections that the capillary should be divided into for math/simulation purposes. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a0ed89fe432750cbfbd8c21f9c77e5b7a}{time\+Period}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Time period \mbox{[}s\mbox{]}, in which blood resides in the same capillary section.\end{DoxyCompactList}\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a07aea060d9cf96b72ef5dc37c414593b}{partial\+Pressures}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Capillary partial pressure of oxygen per capillary section. \end{DoxyCompactList}\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_ae401290b41c80eda78fa21a08f5098f3}{co2partial\+Pressures}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Capillary partial pressure of carbon dioxide per capillary section. \end{DoxyCompactList}\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a1615656089ec469bde9cb182e4b86540}{crossing\+Spheres\+O2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em How many \char`\"{}spheres\char`\"{}, i.\+e. simulation particles that represent a specific number of oxygen molecules, diffuse into a given section of the capillary each second. \end{DoxyCompactList}\item 
+float\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a1aba460bdf9ac8571d587ccc9c8f843e}{crossing\+Spheres\+CO2}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em How many \char`\"{}spheres\char`\"{}, i.\+e. simulation particles that represent a specific number of carbon dioxide molecules, diffuse out of a given section of the capillary each second. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class handles all calculations for partial pressures of respiratory gases in the blood across the capillary. It determines the pressure gradient of gases between capillary sections and alveolar space and calculates the resulting diffusion of gas molecules, as well as values deriving from that for visualization purposes. 
+
+This class is a pivotal point of the alveolar gas exchange simulation since it represents the first of two steps of the underlying mathematical model. This step describes the diffusion of oxygen out of the alveolus and into the capillary depending on partial pressure gradients and morphological parameters (surface area, barrier thickness). The diffusion of oxygen is calculated based on Fick\textquotesingle{}s law and was adapted from (Weibel et al., 1993)\+: \+: \$\$ \textbackslash{}nu = K\+\_\+\{O\+\_\+\{2\}\} $\ast$ \textbackslash{}frac\{s\}\{\textbackslash{}tau\} $\ast$ \textbackslash{}\+Delta PO\+\_\+\{2\}\$\$ \$\textbackslash{}nu\$\+: \$\+O\+\_\+\{2\}\$-\/flow \mbox{[}\$\textbackslash{}frac\{\textbackslash{}mu m$^\wedge$\{3\}\}\{sec\}\$\mbox{]} \$\+K\+\_\+\{ O\+\_\+\{ 2\} \}\$\+: Krogh \textquotesingle{}s permeability coefficient for oxygen \mbox{[}\$\textbackslash{}frac\{\textbackslash{}mu m$^\wedge$\{2\}\}\{sec $\ast$ mm\+Hg\}\$\mbox{]} s\+: surface area\mbox{[}\$\textbackslash{}mu m $^\wedge$\{ 2\}\$\mbox{]} \$\textbackslash{}tau\$\+: barrier thickness\mbox{[}\$\textbackslash{}mu m\$\mbox{]}
+
+In a second step, O2-\/uptake by the red blood cells will be determined by calculating O2 saturation of hemoglobin \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation}{Hb\+Saturation}}.
+
+A single visualized capillary was chosen to represent an averaged behaviour for blood flow and gas exchange as it occurs in the whole capillary network surrounding the alveolus. To approximate the gas uptake as blood flows through this capillary network, the representative capillary is divided into a number of discrete sections of equal length. That number is defined in \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a7d43981efc2780b71ff5c65660ced6c4}{number\+Sections}}. Initial gas partial pressure in the blood is determined by a user-\/adjustable setting. Based on this value, and the likewise user-\/adjustable alveolar partial pressure, the pressure gradient in the first section is determined. Based on the time the blood spends in a section of the capillary, determined by blood flow velocity, Fick\textquotesingle{}s law is used to determine the diffusion of oxygen into that capillary section, and how this changes its partial pressure in the blood in the time it takes to traverse the section. The resulting value -\/ i.\+e. the partial pressure the blood should have when entering the next section -\/ is propagated as initial partial pressure for the next capillary section, which calculates the new oxygen flow and resulting uptake and blood oxygen partial pressure in the same manner, and so on.
+
+The amount of carbon dioxide diffusing out of the capillary and into the alveolus is determined via the respiratory exchange ratio RQ from the amount of oxygen that is taken up by the blood.
+
+These partial pressure values are integral to simulating and visualizing the process of gas exchange as deoxygenated blood flows around the alveolus and takes up oxygen, both directly and through derived values like the amount of particles that diffuse from the alveolar space into the blood. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_abb71b311e2d422da33165ed1e80fdcab}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_abb71b311e2d422da33165ed1e80fdcab}} 
+\index{Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}!HandleParametersUpdated@{HandleParametersUpdated}}
+\index{HandleParametersUpdated@{HandleParametersUpdated}!Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}}
+\doxysubsubsection{\texorpdfstring{HandleParametersUpdated()}{HandleParametersUpdated()}}
+{\footnotesize\ttfamily override void Simulation.\+Systems.\+Gas\+Exchange.\+Partial\+Pressure.\+Handle\+Parameters\+Updated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Recalculate partial pressures and derived values, then alert all subscribers to those updates. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_component}{Simulation.\+Systems.\+Alveolus\+Component}}.
+
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a3053b915dcae317fc7da304c23ab8b84}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a3053b915dcae317fc7da304c23ab8b84}} 
+\index{Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}!HandleReset@{HandleReset}}
+\index{HandleReset@{HandleReset}!Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}}
+\doxysubsubsection{\texorpdfstring{HandleReset()}{HandleReset()}}
+{\footnotesize\ttfamily override void Simulation.\+Systems.\+Gas\+Exchange.\+Partial\+Pressure.\+Handle\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}}]{instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_component}{Simulation.\+Systems.\+Alveolus\+Component}}.
+
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a6e0fd9e94226484b256d5b505ab9edd5}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a6e0fd9e94226484b256d5b505ab9edd5}} 
+\index{Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}!SphereScale@{SphereScale}}
+\index{SphereScale@{SphereScale}!Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}}
+\doxysubsubsection{\texorpdfstring{SphereScale()}{SphereScale()}}
+{\footnotesize\ttfamily void Simulation.\+Systems.\+Gas\+Exchange.\+Partial\+Pressure.\+Sphere\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calculates what volume one rendered gas sphere represents respectively. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume\+O2\+Alv} & Total volume of oxygen in an alveolus. Calculated from default values for alveolar partial pressure of oxygen (100 mm\+Hg), atmospheric pressure (760 mm\+Hg) and the mean volume of an alveolus (4,2$\ast$10$\ast$$\ast$6 µm³, Ochs et al., 2004). \\
+\hline
+{\em volume\+CO2\+Alv} & Total volume of carbon dioxide in an alveolus. Calculated from default values for alveolar partial pressure of carbon dioxide (40 mm\+Hg), atmospheric pressure (760 mm\+Hg) and the mean volume of an alveolus (4,2$\ast$10$\ast$$\ast$6 \mbox{[}µm³\mbox{]}, Ochs et al., 2004). \\
+\hline
+\end{DoxyParams}
+~\newline
+ \mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a090978264d9d24b436002317ac944590}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a090978264d9d24b436002317ac944590}} 
+\index{Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}!Subscribe@{Subscribe}}
+\index{Subscribe@{Subscribe}!Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}}
+\doxysubsubsection{\texorpdfstring{Subscribe()}{Subscribe()}}
+{\footnotesize\ttfamily void Simulation.\+Systems.\+Gas\+Exchange.\+Partial\+Pressure.\+Subscribe (\begin{DoxyParamCaption}\item[{Parameters\+Data.\+Update\+Values}]{method }\end{DoxyParamCaption})}
+
+
+
+Subscribe a method to be called whenever \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure}{Partial\+Pressure}} updates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method} & Method to be called.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_ad830c8e383b845a8e30da3687566056a}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_ad830c8e383b845a8e30da3687566056a}} 
+\index{Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}!Unsubscribe@{Unsubscribe}}
+\index{Unsubscribe@{Unsubscribe}!Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}}
+\doxysubsubsection{\texorpdfstring{Unsubscribe()}{Unsubscribe()}}
+{\footnotesize\ttfamily void Simulation.\+Systems.\+Gas\+Exchange.\+Partial\+Pressure.\+Unsubscribe (\begin{DoxyParamCaption}\item[{Parameters\+Data.\+Update\+Values}]{method }\end{DoxyParamCaption})}
+
+
+
+Unsubscribe a method from getting called on \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure}{Partial\+Pressure}} changes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method} & Method to unsubscribe.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_ae401290b41c80eda78fa21a08f5098f3}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_ae401290b41c80eda78fa21a08f5098f3}} 
+\index{Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}!co2partialPressures@{co2partialPressures}}
+\index{co2partialPressures@{co2partialPressures}!Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}}
+\doxysubsubsection{\texorpdfstring{co2partialPressures}{co2partialPressures}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} Simulation.\+Systems.\+Gas\+Exchange.\+Partial\+Pressure.\+co2partial\+Pressures\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Capillary partial pressure of carbon dioxide per capillary section. 
+
+{\ttfamily co2partial\+Pressures.\+Length} equals \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a7d43981efc2780b71ff5c65660ced6c4}{number\+Sections}} \mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a1aba460bdf9ac8571d587ccc9c8f843e}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a1aba460bdf9ac8571d587ccc9c8f843e}} 
+\index{Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}!crossingSpheresCO2@{crossingSpheresCO2}}
+\index{crossingSpheresCO2@{crossingSpheresCO2}!Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}}
+\doxysubsubsection{\texorpdfstring{crossingSpheresCO2}{crossingSpheresCO2}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} Simulation.\+Systems.\+Gas\+Exchange.\+Partial\+Pressure.\+crossing\+Spheres\+CO2\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+How many \char`\"{}spheres\char`\"{}, i.\+e. simulation particles that represent a specific number of carbon dioxide molecules, diffuse out of a given section of the capillary each second. 
+
+{\ttfamily crossing\+Spheres\+CO2.\+Length} equals \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a7d43981efc2780b71ff5c65660ced6c4}{number\+Sections}} \mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a1615656089ec469bde9cb182e4b86540}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a1615656089ec469bde9cb182e4b86540}} 
+\index{Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}!crossingSpheresO2@{crossingSpheresO2}}
+\index{crossingSpheresO2@{crossingSpheresO2}!Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}}
+\doxysubsubsection{\texorpdfstring{crossingSpheresO2}{crossingSpheresO2}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} Simulation.\+Systems.\+Gas\+Exchange.\+Partial\+Pressure.\+crossing\+Spheres\+O2\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+How many \char`\"{}spheres\char`\"{}, i.\+e. simulation particles that represent a specific number of oxygen molecules, diffuse into a given section of the capillary each second. 
+
+{\ttfamily crossing\+Spheres\+O2.\+Length} equals \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a7d43981efc2780b71ff5c65660ced6c4}{number\+Sections}} \mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a7d43981efc2780b71ff5c65660ced6c4}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a7d43981efc2780b71ff5c65660ced6c4}} 
+\index{Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}!numberSections@{numberSections}}
+\index{numberSections@{numberSections}!Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}}
+\doxysubsubsection{\texorpdfstring{numberSections}{numberSections}}
+{\footnotesize\ttfamily int Simulation.\+Systems.\+Gas\+Exchange.\+Partial\+Pressure.\+number\+Sections = 50\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Number of sections that the capillary should be divided into for math/simulation purposes. 
+
+Defines the size of arrays holding per-\/section values for the capillary, and is as such relevant for anything relying on capillary partial pressure values or gas diffusion numbers.\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a07aea060d9cf96b72ef5dc37c414593b}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a07aea060d9cf96b72ef5dc37c414593b}} 
+\index{Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}!partialPressures@{partialPressures}}
+\index{partialPressures@{partialPressures}!Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}}
+\doxysubsubsection{\texorpdfstring{partialPressures}{partialPressures}}
+{\footnotesize\ttfamily float \mbox{[}$\,$\mbox{]} Simulation.\+Systems.\+Gas\+Exchange.\+Partial\+Pressure.\+partial\+Pressures\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Capillary partial pressure of oxygen per capillary section. 
+
+{\ttfamily partial\+Pressures.\+Length} equals \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a7d43981efc2780b71ff5c65660ced6c4}{number\+Sections}} \mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a0ed89fe432750cbfbd8c21f9c77e5b7a}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure_a0ed89fe432750cbfbd8c21f9c77e5b7a}} 
+\index{Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}!timePeriod@{timePeriod}}
+\index{timePeriod@{timePeriod}!Simulation.Systems.GasExchange.PartialPressure@{Simulation.Systems.GasExchange.PartialPressure}}
+\doxysubsubsection{\texorpdfstring{timePeriod}{timePeriod}}
+{\footnotesize\ttfamily float Simulation.\+Systems.\+Gas\+Exchange.\+Partial\+Pressure.\+time\+Period\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Time period \mbox{[}s\mbox{]}, in which blood resides in the same capillary section.
+
+Calculated from the section length and blood flow velocity. This is of importance since diffusion is expressed as volume / time. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Simulation/\+Systems/\+Gas\+Exchange/Partial\+Pressure.\+cs\end{DoxyCompactItemize}

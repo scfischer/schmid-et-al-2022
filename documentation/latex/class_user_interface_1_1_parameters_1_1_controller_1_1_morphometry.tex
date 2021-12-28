@@ -1,0 +1,54 @@
+\hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_morphometry}{}\doxysection{User\+Interface.\+Parameters.\+Controller.\+Morphometry Class Reference}
+\label{class_user_interface_1_1_parameters_1_1_controller_1_1_morphometry}\index{UserInterface.Parameters.Controller.Morphometry@{UserInterface.Parameters.Controller.Morphometry}}
+
+
+This class controls the user configuration of model parameters related to the morphology of the alveolus.  
+
+
+Inheritance diagram for User\+Interface.\+Parameters.\+Controller.\+Morphometry\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_user_interface_1_1_parameters_1_1_controller_1_1_morphometry}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_morphometry_a81747f722a59a70d25e3521187d89fc8}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_morphometry_a81747f722a59a70d25e3521187d89fc8}} 
+\mbox{\hyperlink{class_user_interface_1_1_elements_1_1_parameter_slider}{Parameter\+Slider}} {\bfseries surface\+Area\+Slider}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_morphometry_aaf3fe965aff0f4e5cce223f270367908}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_morphometry_aaf3fe965aff0f4e5cce223f270367908}} 
+\mbox{\hyperlink{class_user_interface_1_1_elements_1_1_parameter_slider}{Parameter\+Slider}} {\bfseries tissue\+Barrier\+Thickness\+Slider}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_morphometry_a6be92fd2124e1ca228af15b24e8c5a6f}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_morphometry_a6be92fd2124e1ca228af15b24e8c5a6f}} 
+\mbox{\hyperlink{class_user_interface_1_1_elements_1_1_labeled_value}{Labeled\+Value}} {\bfseries dm\+O2}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_user_interface_1_1_parameters_1_1_controller_1_1_morphometry_a376aa3169ae8d29b79325dd2aa45128f}{Parameters\+Data\+Changed\+Handler}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class controls the user configuration of model parameters related to the morphology of the alveolus. 
+
+Input from the user is passed to Parameters\+Data of the corresponding instance. It takes into account which pressure unit is currently selected and converts the values accordingly if necessary (the model calculations are all performed in mm\+Hg). If changes are made in Parameters\+Data or another instance is selected, the parameter sliders are updated immediately. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_morphometry_a376aa3169ae8d29b79325dd2aa45128f}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_morphometry_a376aa3169ae8d29b79325dd2aa45128f}} 
+\index{UserInterface.Parameters.Controller.Morphometry@{UserInterface.Parameters.Controller.Morphometry}!ParametersDataChangedHandler@{ParametersDataChangedHandler}}
+\index{ParametersDataChangedHandler@{ParametersDataChangedHandler}!UserInterface.Parameters.Controller.Morphometry@{UserInterface.Parameters.Controller.Morphometry}}
+\doxysubsubsection{\texorpdfstring{ParametersDataChangedHandler()}{ParametersDataChangedHandler()}}
+{\footnotesize\ttfamily override void User\+Interface.\+Parameters.\+Controller.\+Morphometry.\+Parameters\+Data\+Changed\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_user_interface_1_1_parameters_1_1_data_1_1_parameters_data_consumer}{User\+Interface.\+Parameters.\+Data.\+Parameters\+Data\+Consumer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+User\+Interface/\+Parameters/\+Scripts/\+Controller/Morphometry.\+cs\end{DoxyCompactItemize}

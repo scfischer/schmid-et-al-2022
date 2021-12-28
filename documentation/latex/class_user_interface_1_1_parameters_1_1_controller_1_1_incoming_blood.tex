@@ -1,0 +1,78 @@
+\hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood}{}\doxysection{User\+Interface.\+Parameters.\+Controller.\+Incoming\+Blood Class Reference}
+\label{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood}\index{UserInterface.Parameters.Controller.IncomingBlood@{UserInterface.Parameters.Controller.IncomingBlood}}
+
+
+This class controls the user configuration of model parameters related to incoming, deoxygenated blood.  
+
+
+Inheritance diagram for User\+Interface.\+Parameters.\+Controller.\+Incoming\+Blood\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a5af80af5ec03ed06431fd0224e5cf135}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a5af80af5ec03ed06431fd0224e5cf135}} 
+\mbox{\hyperlink{class_user_interface_1_1_elements_1_1_parameter_slider}{Parameter\+Slider}} {\bfseries oxygen\+Slider}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a6f3ee2f9ec73c7cd515e7a20092463b3}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a6f3ee2f9ec73c7cd515e7a20092463b3}} 
+\mbox{\hyperlink{class_user_interface_1_1_elements_1_1_parameter_slider}{Parameter\+Slider}} {\bfseries carbon\+Dioxide\+Slider}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a93d9b9d061273c1b8dfe1bd213aea277}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a93d9b9d061273c1b8dfe1bd213aea277}} 
+\mbox{\hyperlink{class_user_interface_1_1_elements_1_1_parameter_slider}{Parameter\+Slider}} {\bfseries p\+HSlider}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a88dd166fc1ff4450240f3f8808161462}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a88dd166fc1ff4450240f3f8808161462}} 
+\mbox{\hyperlink{class_user_interface_1_1_elements_1_1_parameter_slider}{Parameter\+Slider}} {\bfseries blood\+Volume\+Slider}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a7b6baac56d98505d7f0266022f67bc6c}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a7b6baac56d98505d7f0266022f67bc6c}} 
+\mbox{\hyperlink{class_user_interface_1_1_elements_1_1_parameter_slider}{Parameter\+Slider}} {\bfseries blood\+Flow\+Velocity\+Slider}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a99a281593e2fe7c1a1b6dfc752643d1d}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a99a281593e2fe7c1a1b6dfc752643d1d}} 
+\mbox{\hyperlink{class_user_interface_1_1_elements_1_1_parameter_slider}{Parameter\+Slider}} {\bfseries blood\+Temperature\+Slider}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a8d0691c351eb81389629b90cb1321413}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a8d0691c351eb81389629b90cb1321413}} 
+\mbox{\hyperlink{class_user_interface_1_1_elements_1_1_parameter_slider}{Parameter\+Slider}} {\bfseries blood\+DPGConcentration\+Slider}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a2ada47766f52114aa6396630a3807095}{Parameters\+Data\+Changed\+Handler}} ()
+\item 
+override void \mbox{\hyperlink{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a5ae006d4e3d6a1e73b5164b29e4157b7}{Subscribe\+Handler}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class controls the user configuration of model parameters related to incoming, deoxygenated blood. 
+
+Input from the user is passed to Parameters\+Data of the corresponding instance. It takes into account which pressure unit is currently selected and converts the values accordingly if necessary (the model calculations are all performed in mm\+Hg). If changes are made in Parameters\+Data or another instance is selected, the parameter sliders are updated immediately. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a2ada47766f52114aa6396630a3807095}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a2ada47766f52114aa6396630a3807095}} 
+\index{UserInterface.Parameters.Controller.IncomingBlood@{UserInterface.Parameters.Controller.IncomingBlood}!ParametersDataChangedHandler@{ParametersDataChangedHandler}}
+\index{ParametersDataChangedHandler@{ParametersDataChangedHandler}!UserInterface.Parameters.Controller.IncomingBlood@{UserInterface.Parameters.Controller.IncomingBlood}}
+\doxysubsubsection{\texorpdfstring{ParametersDataChangedHandler()}{ParametersDataChangedHandler()}}
+{\footnotesize\ttfamily override void User\+Interface.\+Parameters.\+Controller.\+Incoming\+Blood.\+Parameters\+Data\+Changed\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_user_interface_1_1_parameters_1_1_data_1_1_parameters_data_consumer}{User\+Interface.\+Parameters.\+Data.\+Parameters\+Data\+Consumer}}.
+
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a5ae006d4e3d6a1e73b5164b29e4157b7}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_incoming_blood_a5ae006d4e3d6a1e73b5164b29e4157b7}} 
+\index{UserInterface.Parameters.Controller.IncomingBlood@{UserInterface.Parameters.Controller.IncomingBlood}!SubscribeHandler@{SubscribeHandler}}
+\index{SubscribeHandler@{SubscribeHandler}!UserInterface.Parameters.Controller.IncomingBlood@{UserInterface.Parameters.Controller.IncomingBlood}}
+\doxysubsubsection{\texorpdfstring{SubscribeHandler()}{SubscribeHandler()}}
+{\footnotesize\ttfamily override void User\+Interface.\+Parameters.\+Controller.\+Incoming\+Blood.\+Subscribe\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_user_interface_1_1_parameters_1_1_data_1_1_parameters_data_consumer}{User\+Interface.\+Parameters.\+Data.\+Parameters\+Data\+Consumer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+User\+Interface/\+Parameters/\+Scripts/\+Controller/Incoming\+Blood.\+cs\end{DoxyCompactItemize}

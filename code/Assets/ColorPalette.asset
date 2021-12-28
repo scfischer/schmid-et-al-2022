@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1c4c4aa011540d2bc9b50ef2ff08040, type: 3}
+  m_Name: ColorPalette
+  m_EditorClassIdentifier: 
+  instanceColors:
+  - {r: 1, g: 0.24905658, b: 0.24905658, a: 1}
+  - {r: 1, g: 0.3803922, b: 0.60968304, a: 1}
+  - {r: 0.65590227, g: 0.23921567, b: 1, a: 1}
+  - {r: 0.4234133, g: 0.33333337, b: 1, a: 1}
+  - {r: 0.21960783, g: 0.24454173, b: 1, a: 1}
+  - {r: 0.07058823, g: 0.5343645, b: 1, a: 1}
+  - {r: 0, g: 1, b: 0.95505905, a: 1}
+  - {r: 0.35283017, g: 1, b: 0.5677807, a: 1}
+  - {r: 0.6006448, g: 1, b: 0.27735847, a: 1}
+  - {r: 1, g: 0.6615147, b: 0.2867924, a: 1}
+  nominal: {r: 0.31372547, g: 1, b: 0.40843266, a: 1}
+  abnormal: {r: 0.9716981, g: 0.8349399, b: 0.2236739, a: 1}
+  severe: {r: 1, g: 0.2867924, b: 0.2867924, a: 1}
+  unrealistic: {r: 0.8980392, g: 0.88235295, b: 0.88235295, a: 1}
+  HighlightPanelColor: {r: 0.9, g: 0.9, b: 0.7, a: 1}

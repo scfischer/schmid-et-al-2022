@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2191748132168123719
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 529.71075
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 375.45746
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5886144223750974180, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_Name
+      value: Dissociation
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663996091368063692, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_text
+      value: "This graph displays the oxygen saturation of hemoglobin in dependence
+        of the partial pressure of oxygen in the blood. It is often used to assess
+        the Bohr effect. \n\nThe vertical line indicates the value of oxygen partial
+        pressure of the incoming, deoxygenated blood. This value represents the pO2
+        of mixed venous blood, returning from the tissues to the heart and into the
+        lungs. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790693179741456995, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_text
+      value: Oxygen Dissociation Curve
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6359fe8e0433d514890f238e3a9f09f0, type: 3}

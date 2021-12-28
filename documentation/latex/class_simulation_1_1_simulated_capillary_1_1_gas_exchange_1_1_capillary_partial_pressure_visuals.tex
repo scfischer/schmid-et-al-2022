@@ -1,0 +1,66 @@
+\hypertarget{class_simulation_1_1_simulated_capillary_1_1_gas_exchange_1_1_capillary_partial_pressure_visuals}{}\doxysection{Simulation.\+Simulated\+Capillary.\+Gas\+Exchange.\+Capillary\+Partial\+Pressure\+Visuals Class Reference}
+\label{class_simulation_1_1_simulated_capillary_1_1_gas_exchange_1_1_capillary_partial_pressure_visuals}\index{Simulation.SimulatedCapillary.GasExchange.CapillaryPartialPressureVisuals@{Simulation.SimulatedCapillary.GasExchange.CapillaryPartialPressureVisuals}}
+
+
+This class is responsible for tinting the capillary material to represent oxygenation of the blood flowing through.  
+
+
+Inheritance diagram for Simulation.\+Simulated\+Capillary.\+Gas\+Exchange.\+Capillary\+Partial\+Pressure\+Visuals\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_simulation_1_1_simulated_capillary_1_1_gas_exchange_1_1_capillary_partial_pressure_visuals}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_simulated_capillary_1_1_gas_exchange_1_1_capillary_partial_pressure_visuals_a67ecb190317ac6c554ed2aff1527c70e}\label{class_simulation_1_1_simulated_capillary_1_1_gas_exchange_1_1_capillary_partial_pressure_visuals_a67ecb190317ac6c554ed2aff1527c70e}} 
+Renderer {\bfseries m\+\_\+inflow\+Renderer}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_simulated_capillary_1_1_gas_exchange_1_1_capillary_partial_pressure_visuals_a79bbd88810d09e1b12f2d780ed26459c}\label{class_simulation_1_1_simulated_capillary_1_1_gas_exchange_1_1_capillary_partial_pressure_visuals_a79bbd88810d09e1b12f2d780ed26459c}} 
+Renderer {\bfseries m\+\_\+outflow\+Renderer}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_simulated_capillary_1_1_gas_exchange_1_1_capillary_partial_pressure_visuals_a13809dbbf8c5b0bd23d44963a445ea26}\label{class_simulation_1_1_simulated_capillary_1_1_gas_exchange_1_1_capillary_partial_pressure_visuals_a13809dbbf8c5b0bd23d44963a445ea26}} 
+bool {\bfseries shader\+Supports\+Array} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_simulation_1_1_simulated_capillary_1_1_gas_exchange_1_1_capillary_partial_pressure_visuals_aac2dec102bd342eb3b3fe5d7d3d23698}{Handle\+Reset}} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance)
+\item 
+override void \mbox{\hyperlink{class_simulation_1_1_simulated_capillary_1_1_gas_exchange_1_1_capillary_partial_pressure_visuals_a5c3c3b9a890a2da401fcb791a1d02a57}{On\+Destroy}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class is responsible for tinting the capillary material to represent oxygenation of the blood flowing through. 
+
+This is achieved by taking the oxygen partial pressure of the blood in each capillary section, determining a color to represent it, then using that color for the central column of pixels of a section. To achieve a more appealing result, a gradient is calculated for the transition between adjacent sections. The color values are applied dynamically to the main texture of the capillary material. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simulation_1_1_simulated_capillary_1_1_gas_exchange_1_1_capillary_partial_pressure_visuals_aac2dec102bd342eb3b3fe5d7d3d23698}\label{class_simulation_1_1_simulated_capillary_1_1_gas_exchange_1_1_capillary_partial_pressure_visuals_aac2dec102bd342eb3b3fe5d7d3d23698}} 
+\index{Simulation.SimulatedCapillary.GasExchange.CapillaryPartialPressureVisuals@{Simulation.SimulatedCapillary.GasExchange.CapillaryPartialPressureVisuals}!HandleReset@{HandleReset}}
+\index{HandleReset@{HandleReset}!Simulation.SimulatedCapillary.GasExchange.CapillaryPartialPressureVisuals@{Simulation.SimulatedCapillary.GasExchange.CapillaryPartialPressureVisuals}}
+\doxysubsubsection{\texorpdfstring{HandleReset()}{HandleReset()}}
+{\footnotesize\ttfamily override void Simulation.\+Simulated\+Capillary.\+Gas\+Exchange.\+Capillary\+Partial\+Pressure\+Visuals.\+Handle\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}}]{instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_component_behavior}{Simulation.\+Systems.\+Alveolus\+Component\+Behavior}}.
+
+\mbox{\Hypertarget{class_simulation_1_1_simulated_capillary_1_1_gas_exchange_1_1_capillary_partial_pressure_visuals_a5c3c3b9a890a2da401fcb791a1d02a57}\label{class_simulation_1_1_simulated_capillary_1_1_gas_exchange_1_1_capillary_partial_pressure_visuals_a5c3c3b9a890a2da401fcb791a1d02a57}} 
+\index{Simulation.SimulatedCapillary.GasExchange.CapillaryPartialPressureVisuals@{Simulation.SimulatedCapillary.GasExchange.CapillaryPartialPressureVisuals}!OnDestroy@{OnDestroy}}
+\index{OnDestroy@{OnDestroy}!Simulation.SimulatedCapillary.GasExchange.CapillaryPartialPressureVisuals@{Simulation.SimulatedCapillary.GasExchange.CapillaryPartialPressureVisuals}}
+\doxysubsubsection{\texorpdfstring{OnDestroy()}{OnDestroy()}}
+{\footnotesize\ttfamily override void Simulation.\+Simulated\+Capillary.\+Gas\+Exchange.\+Capillary\+Partial\+Pressure\+Visuals.\+On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_component_behavior}{Simulation.\+Systems.\+Alveolus\+Component\+Behavior}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Simulation/\+Visualization/\+Capillary/\+Scripts/Capillary\+Partial\+Pressure\+Visuals.\+cs\end{DoxyCompactItemize}

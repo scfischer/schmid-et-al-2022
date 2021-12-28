@@ -1,0 +1,149 @@
+\hypertarget{class_simulation_1_1_systems_1_1_output_1_1_output_collector}{}\doxysection{Simulation.\+Systems.\+Output.\+Output\+Collector Class Reference}
+\label{class_simulation_1_1_systems_1_1_output_1_1_output_collector}\index{Simulation.Systems.Output.OutputCollector@{Simulation.Systems.Output.OutputCollector}}
+
+
+This class collects and calculates various data from blood at the end of the capillary to be available for displaying to the user, e.\+g. in graphs.  
+
+
+Inheritance diagram for Simulation.\+Systems.\+Output.\+Output\+Collector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_simulation_1_1_systems_1_1_output_1_1_output_collector}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ Vector2 $>$ \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector_aad538c0c805c0a2682c562264d27c127}{Create\+Dissociation\+Curve\+Data}} (int num\+Data\+Points)
+\begin{DoxyCompactList}\small\item\em Method that calls Hb\+Saturation.\+Calculate\+Hemoglobin\+O2\+Saturation\+Range(float,float,float,int,out float\mbox{[}$\,$\mbox{]},out float\mbox{[}$\,$\mbox{]}) to create a list of oxygen saturation values based on the current carbon dioxide partial pressure of incoming blood and a set range of oxygen partial pressures in the blood. To be plotted in the oxygen dissociation curve. ~\newline
+ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector_aca285ca3c430936069ca3a549b9c8e14}{Subscribe}} (Parameters\+Data.\+Update\+Values method)
+\begin{DoxyCompactList}\small\item\em Subscribe a method to be called whenever \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector}{Output\+Collector}} updates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a2f52fa0b26d0c442000a26e75acaa19e}{Unsubscribe}} (Parameters\+Data.\+Update\+Values method)
+\begin{DoxyCompactList}\small\item\em Unsubscribe a method from getting called on \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector}{Output\+Collector}} changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a22375ff59ec3e31ff733f1c1453d1c73}{Handle\+Reset}} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance)
+\item 
+override void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a59a8606f365940a95d6e6bddd9eb2295}{Handle\+Parameters\+Updated}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a7c0854b256058f9c0b7382a2eb0738c5}\label{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a7c0854b256058f9c0b7382a2eb0738c5}} 
+float\mbox{[}$\,$\mbox{]} {\bfseries o2\+Partial\+Pressures}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Array of oxygen partial pressures in the blood per capillary section, as calculated in \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure}{Gas\+Exchange.\+Partial\+Pressure}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a4e0bd4d94a7162db28c0d27ed69fda52}\label{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a4e0bd4d94a7162db28c0d27ed69fda52}} 
+float {\bfseries partial\+Pressure\+At\+End}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Partial pressure of oxygen in the blood at the end of the capillary. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a03c4969cad00ab4d5b9f6de8066cb348}\label{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a03c4969cad00ab4d5b9f6de8066cb348}} 
+float\mbox{[}$\,$\mbox{]} {\bfseries co2\+Partial\+Pressures}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Array of carbon dioxide partial pressures in the blood per capillary section, as calculated in \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure}{Gas\+Exchange.\+Partial\+Pressure}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a41d8e281d3280a209f1c1762143a8048}\label{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a41d8e281d3280a209f1c1762143a8048}} 
+float {\bfseries venous\+Co2\+Partial\+Pressure}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Partial pressure of carbon dioxide in incoming blood (at the start of the capillary). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a5769bba65e0571f2e4863e7ed881852a}\label{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a5769bba65e0571f2e4863e7ed881852a}} 
+float {\bfseries co2\+Partial\+Pressure\+At\+End}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Partial pressure of carbon dioxide in the blood at the end of the capillary. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a8452fe4b58c44ce70fc38dc024630a76}\label{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a8452fe4b58c44ce70fc38dc024630a76}} 
+float {\bfseries time\+Period}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Time it takes an erythrocyte to cross one section of the capillary. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_output_collector_adc6b6e04379268d6049d5509b7b96339}\label{class_simulation_1_1_systems_1_1_output_1_1_output_collector_adc6b6e04379268d6049d5509b7b96339}} 
+float\mbox{[}$\,$\mbox{]} {\bfseries hb\+O2\+Saturations}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Array of hemoglobin oxygen saturation values that erythrocytes in a capillary section would have based on the partial pressure there, as calculated in \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation}{Gas\+Exchange.\+Hb\+Saturation}} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a350dbf57107a536a95e86f042a2cb84e}\label{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a350dbf57107a536a95e86f042a2cb84e}} 
+float {\bfseries saturation\+At\+End}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Blood oxygen saturation at the end of the capillary. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a382e0bacbf9c5ae6285f18de27e132f7}\label{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a382e0bacbf9c5ae6285f18de27e132f7}} 
+float {\bfseries o2\+Uptake\+Mass}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Mass of oxygen \mbox{[}ng\mbox{]} taken up by the blood while passing through the capillary. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a0937e895b4fe57c8c67de8aa236e59ef}\label{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a0937e895b4fe57c8c67de8aa236e59ef}} 
+float {\bfseries o2\+Uptake\+Volume}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Oxygen volume \mbox{[}µm³\mbox{]} taken up by the blood while passing through the capillary. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a7f796bb1f50c07a50ae8eafd0a1bb916}\label{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a7f796bb1f50c07a50ae8eafd0a1bb916}} 
+float {\bfseries blood\+Transit\+Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Time taken for erythrocytes to pass through the entire capillary. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_output_collector_adcb8f96cbaf8b122d1d6bf9d90a62313}\label{class_simulation_1_1_systems_1_1_output_1_1_output_collector_adcb8f96cbaf8b122d1d6bf9d90a62313}} 
+float {\bfseries dissociation\+Graph\+PO2\+Min} = 0f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Lower limit for the oxygen partial pressure values of the dissociation graph (x axis). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_output_collector_add5d0f9f3ec119883d391664bcfe4bc8}\label{class_simulation_1_1_systems_1_1_output_1_1_output_collector_add5d0f9f3ec119883d391664bcfe4bc8}} 
+float {\bfseries dissociation\+Graph\+PO2\+Max} = 150f\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Upper limit for the oxygen partial pressure values of the dissociation graph (x axis). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class collects and calculates various data from blood at the end of the capillary to be available for displaying to the user, e.\+g. in graphs. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_output_collector_aad538c0c805c0a2682c562264d27c127}\label{class_simulation_1_1_systems_1_1_output_1_1_output_collector_aad538c0c805c0a2682c562264d27c127}} 
+\index{Simulation.Systems.Output.OutputCollector@{Simulation.Systems.Output.OutputCollector}!CreateDissociationCurveData@{CreateDissociationCurveData}}
+\index{CreateDissociationCurveData@{CreateDissociationCurveData}!Simulation.Systems.Output.OutputCollector@{Simulation.Systems.Output.OutputCollector}}
+\doxysubsubsection{\texorpdfstring{CreateDissociationCurveData()}{CreateDissociationCurveData()}}
+{\footnotesize\ttfamily List$<$ Vector2 $>$ Simulation.\+Systems.\+Output.\+Output\+Collector.\+Create\+Dissociation\+Curve\+Data (\begin{DoxyParamCaption}\item[{int}]{num\+Data\+Points }\end{DoxyParamCaption})}
+
+
+
+Method that calls Hb\+Saturation.\+Calculate\+Hemoglobin\+O2\+Saturation\+Range(float,float,float,int,out float\mbox{[}$\,$\mbox{]},out float\mbox{[}$\,$\mbox{]}) to create a list of oxygen saturation values based on the current carbon dioxide partial pressure of incoming blood and a set range of oxygen partial pressures in the blood. To be plotted in the oxygen dissociation curve. ~\newline
+ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Data\+Points} & The total number of data points that should be generated. (Including the points at \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector_adcb8f96cbaf8b122d1d6bf9d90a62313}{dissociation\+Graph\+PO2\+Min}} and \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector_add5d0f9f3ec119883d391664bcfe4bc8}{dissociation\+Graph\+PO2\+Max}}). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a59a8606f365940a95d6e6bddd9eb2295}\label{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a59a8606f365940a95d6e6bddd9eb2295}} 
+\index{Simulation.Systems.Output.OutputCollector@{Simulation.Systems.Output.OutputCollector}!HandleParametersUpdated@{HandleParametersUpdated}}
+\index{HandleParametersUpdated@{HandleParametersUpdated}!Simulation.Systems.Output.OutputCollector@{Simulation.Systems.Output.OutputCollector}}
+\doxysubsubsection{\texorpdfstring{HandleParametersUpdated()}{HandleParametersUpdated()}}
+{\footnotesize\ttfamily override void Simulation.\+Systems.\+Output.\+Output\+Collector.\+Handle\+Parameters\+Updated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_component}{Simulation.\+Systems.\+Alveolus\+Component}}.
+
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a22375ff59ec3e31ff733f1c1453d1c73}\label{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a22375ff59ec3e31ff733f1c1453d1c73}} 
+\index{Simulation.Systems.Output.OutputCollector@{Simulation.Systems.Output.OutputCollector}!HandleReset@{HandleReset}}
+\index{HandleReset@{HandleReset}!Simulation.Systems.Output.OutputCollector@{Simulation.Systems.Output.OutputCollector}}
+\doxysubsubsection{\texorpdfstring{HandleReset()}{HandleReset()}}
+{\footnotesize\ttfamily override void Simulation.\+Systems.\+Output.\+Output\+Collector.\+Handle\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}}]{instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_component}{Simulation.\+Systems.\+Alveolus\+Component}}.
+
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_output_collector_aca285ca3c430936069ca3a549b9c8e14}\label{class_simulation_1_1_systems_1_1_output_1_1_output_collector_aca285ca3c430936069ca3a549b9c8e14}} 
+\index{Simulation.Systems.Output.OutputCollector@{Simulation.Systems.Output.OutputCollector}!Subscribe@{Subscribe}}
+\index{Subscribe@{Subscribe}!Simulation.Systems.Output.OutputCollector@{Simulation.Systems.Output.OutputCollector}}
+\doxysubsubsection{\texorpdfstring{Subscribe()}{Subscribe()}}
+{\footnotesize\ttfamily void Simulation.\+Systems.\+Output.\+Output\+Collector.\+Subscribe (\begin{DoxyParamCaption}\item[{Parameters\+Data.\+Update\+Values}]{method }\end{DoxyParamCaption})}
+
+
+
+Subscribe a method to be called whenever \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector}{Output\+Collector}} updates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method} & Method to be called.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a2f52fa0b26d0c442000a26e75acaa19e}\label{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a2f52fa0b26d0c442000a26e75acaa19e}} 
+\index{Simulation.Systems.Output.OutputCollector@{Simulation.Systems.Output.OutputCollector}!Unsubscribe@{Unsubscribe}}
+\index{Unsubscribe@{Unsubscribe}!Simulation.Systems.Output.OutputCollector@{Simulation.Systems.Output.OutputCollector}}
+\doxysubsubsection{\texorpdfstring{Unsubscribe()}{Unsubscribe()}}
+{\footnotesize\ttfamily void Simulation.\+Systems.\+Output.\+Output\+Collector.\+Unsubscribe (\begin{DoxyParamCaption}\item[{Parameters\+Data.\+Update\+Values}]{method }\end{DoxyParamCaption})}
+
+
+
+Unsubscribe a method from getting called on \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector}{Output\+Collector}} changes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method} & Method to unsubscribe.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Simulation/\+Systems/\+Output/Output\+Collector.\+cs\end{DoxyCompactItemize}

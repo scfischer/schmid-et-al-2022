@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c46da48c9bc894f92898fe564b0645, type: 3}
+  m_Name: COPD
+  m_EditorClassIdentifier: 
+  description: "Chronic Obstructive Pulmonary Disease (COPD) develops \nas a chronic
+    inflammatory response to inhaled irritants.\n\nIt involves several processes: 
+    For once, chronic bronchitis leads \nto increased mucus production and narrowing
+    of the airways. \nThis condition is especially critical during expiration and
+    can lead to \nexpiratory bronchiolar collapse \u2192 inhaled air is trapped in
+    \nthe affected area. Consequently, CO2 is not exhaled properly \nwhich can lead
+    to hypercapnia (abnormally elevated CO2 \nlevels in the blood). Since exhalation
+    is impaired, this disease \nis categorized as an obstructive lung disease.\nSecondly,
+    COPD comprises a condition called emphysema. \nAbnormal defense mechanisms to
+    irritants reaching the lower \nairways and alveoli lead to destruction of the
+    connective tissue. \nThis implies loss of surface area available for gas exchange.\r\n\nMain
+    risk factors are smoking and exposure to pollutants.\r"
+  atmosphericPressureDefault: 760
+  alveolarPpO2Default: 85
+  bloodPpO2Default: 40
+  alveolarPpCo2Default: 70
+  bloodPpCo2Default: 75
+  bloodpHRBCDefault: 7.24
+  bloodVolumeDefault: 404000
+  bloodFlowVelocityDefault: 1
+  bloodTemperatureDefault: 37
+  concentrationDPGDefault: 4.65
+  surfaceAreaDefault: 50000
+  barrierThicknessDefault: 1.11
+  alveolarPpH2O: 45
+  NumberCapillaries: 52

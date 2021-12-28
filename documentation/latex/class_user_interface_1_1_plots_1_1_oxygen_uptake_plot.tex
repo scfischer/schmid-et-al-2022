@@ -1,0 +1,66 @@
+\hypertarget{class_user_interface_1_1_plots_1_1_oxygen_uptake_plot}{}\doxysection{User\+Interface.\+Plots.\+Oxygen\+Uptake\+Plot Class Reference}
+\label{class_user_interface_1_1_plots_1_1_oxygen_uptake_plot}\index{UserInterface.Plots.OxygenUptakePlot@{UserInterface.Plots.OxygenUptakePlot}}
+
+
+This class uses the plugin Plotter to plot the total oxygen uptake summed up over the course of the simulation.  
+
+
+Inheritance diagram for User\+Interface.\+Plots.\+Oxygen\+Uptake\+Plot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_user_interface_1_1_plots_1_1_oxygen_uptake_plot}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_user_interface_1_1_plots_1_1_oxygen_uptake_plot_a1aa8037e01131ee05197dcb2ab3bf71a}{Prepare\+Plot}} ()
+\item 
+override void \mbox{\hyperlink{class_user_interface_1_1_plots_1_1_oxygen_uptake_plot_a5859fad8dcfe59412af7f237deee9c36}{Update\+Data\+Set}} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance, Plotter.\+Graph\+Descriptor graph)
+\item 
+override void \mbox{\hyperlink{class_user_interface_1_1_plots_1_1_oxygen_uptake_plot_a4c2a438fc926bf679250f18f3903326b}{Handle\+Instance\+Reset}} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class uses the plugin Plotter to plot the total oxygen uptake summed up over the course of the simulation. 
+
+This class inherits from the \mbox{\hyperlink{class_user_interface_1_1_plots_1_1_multi_plot}{Multi\+Plot}} class and thus supports plotting results of multiple simulation instances. The elapsed time since the start of the simulation is determined. The current values for the total oxygen uptake are received from the \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector}{Simulation.\+Systems.\+Output.\+Output\+Collector}} of the respective instance. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_interface_1_1_plots_1_1_oxygen_uptake_plot_a4c2a438fc926bf679250f18f3903326b}\label{class_user_interface_1_1_plots_1_1_oxygen_uptake_plot_a4c2a438fc926bf679250f18f3903326b}} 
+\index{UserInterface.Plots.OxygenUptakePlot@{UserInterface.Plots.OxygenUptakePlot}!HandleInstanceReset@{HandleInstanceReset}}
+\index{HandleInstanceReset@{HandleInstanceReset}!UserInterface.Plots.OxygenUptakePlot@{UserInterface.Plots.OxygenUptakePlot}}
+\doxysubsubsection{\texorpdfstring{HandleInstanceReset()}{HandleInstanceReset()}}
+{\footnotesize\ttfamily override void User\+Interface.\+Plots.\+Oxygen\+Uptake\+Plot.\+Handle\+Instance\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}}]{instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_user_interface_1_1_plots_1_1_multi_plot}{User\+Interface.\+Plots.\+Multi\+Plot}}.
+
+\mbox{\Hypertarget{class_user_interface_1_1_plots_1_1_oxygen_uptake_plot_a1aa8037e01131ee05197dcb2ab3bf71a}\label{class_user_interface_1_1_plots_1_1_oxygen_uptake_plot_a1aa8037e01131ee05197dcb2ab3bf71a}} 
+\index{UserInterface.Plots.OxygenUptakePlot@{UserInterface.Plots.OxygenUptakePlot}!PreparePlot@{PreparePlot}}
+\index{PreparePlot@{PreparePlot}!UserInterface.Plots.OxygenUptakePlot@{UserInterface.Plots.OxygenUptakePlot}}
+\doxysubsubsection{\texorpdfstring{PreparePlot()}{PreparePlot()}}
+{\footnotesize\ttfamily override void User\+Interface.\+Plots.\+Oxygen\+Uptake\+Plot.\+Prepare\+Plot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_user_interface_1_1_plots_1_1_multi_plot}{User\+Interface.\+Plots.\+Multi\+Plot}}.
+
+\mbox{\Hypertarget{class_user_interface_1_1_plots_1_1_oxygen_uptake_plot_a5859fad8dcfe59412af7f237deee9c36}\label{class_user_interface_1_1_plots_1_1_oxygen_uptake_plot_a5859fad8dcfe59412af7f237deee9c36}} 
+\index{UserInterface.Plots.OxygenUptakePlot@{UserInterface.Plots.OxygenUptakePlot}!UpdateDataSet@{UpdateDataSet}}
+\index{UpdateDataSet@{UpdateDataSet}!UserInterface.Plots.OxygenUptakePlot@{UserInterface.Plots.OxygenUptakePlot}}
+\doxysubsubsection{\texorpdfstring{UpdateDataSet()}{UpdateDataSet()}}
+{\footnotesize\ttfamily override void User\+Interface.\+Plots.\+Oxygen\+Uptake\+Plot.\+Update\+Data\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}}]{instance,  }\item[{Plotter.\+Graph\+Descriptor}]{graph }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_user_interface_1_1_plots_1_1_multi_plot}{User\+Interface.\+Plots.\+Multi\+Plot}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+User\+Interface/\+Output/\+Plots/\+Scripts/Oxygen\+Uptake\+Plot.\+cs\end{DoxyCompactItemize}

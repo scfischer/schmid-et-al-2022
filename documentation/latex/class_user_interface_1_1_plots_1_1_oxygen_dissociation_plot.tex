@@ -1,0 +1,81 @@
+\hypertarget{class_user_interface_1_1_plots_1_1_oxygen_dissociation_plot}{}\doxysection{User\+Interface.\+Plots.\+Oxygen\+Dissociation\+Plot Class Reference}
+\label{class_user_interface_1_1_plots_1_1_oxygen_dissociation_plot}\index{UserInterface.Plots.OxygenDissociationPlot@{UserInterface.Plots.OxygenDissociationPlot}}
+
+
+This class uses the plugin Plotter to plot the oxygen dissociation curve, which is the oxygen saturation of the blood over a range of oxygen partial pressure values.  
+
+
+Inheritance diagram for User\+Interface.\+Plots.\+Oxygen\+Dissociation\+Plot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_user_interface_1_1_plots_1_1_oxygen_dissociation_plot}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_plots_1_1_oxygen_dissociation_plot_acf53a9137d6fa2d40ce7516f361a3866}\label{class_user_interface_1_1_plots_1_1_oxygen_dissociation_plot_acf53a9137d6fa2d40ce7516f361a3866}} 
+new void {\bfseries Awake} ()
+\item 
+override void \mbox{\hyperlink{class_user_interface_1_1_plots_1_1_oxygen_dissociation_plot_ac68034d2f7b048c274aef86a0b763454}{Register\+Instance}} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance)
+\item 
+override void \mbox{\hyperlink{class_user_interface_1_1_plots_1_1_oxygen_dissociation_plot_ac36e5793f49d73ad9c885c2d457bbe58}{Unregister\+Instance}} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance)
+\item 
+override void \mbox{\hyperlink{class_user_interface_1_1_plots_1_1_oxygen_dissociation_plot_acd5298713dfde22e79560b2d14e6860a}{Prepare\+Plot}} ()
+\item 
+override void \mbox{\hyperlink{class_user_interface_1_1_plots_1_1_oxygen_dissociation_plot_a5d9116393f426e577ecb9a393d6f7618}{Update\+Data\+Set}} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance, Plotter.\+Graph\+Descriptor graph)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class uses the plugin Plotter to plot the oxygen dissociation curve, which is the oxygen saturation of the blood over a range of oxygen partial pressure values. 
+
+This class inherits from the \mbox{\hyperlink{class_user_interface_1_1_plots_1_1_multi_plot}{Multi\+Plot}} class and thus supports plotting results of multiple simulation instances. It receives the datapoints from the \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector}{Simulation.\+Systems.\+Output.\+Output\+Collector}} of the respective instance. The x-\/axis (oxygen partial pressure values) is adjusted for changes in the gas unit (App\+Settings.\+gas\+Unit. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_interface_1_1_plots_1_1_oxygen_dissociation_plot_acd5298713dfde22e79560b2d14e6860a}\label{class_user_interface_1_1_plots_1_1_oxygen_dissociation_plot_acd5298713dfde22e79560b2d14e6860a}} 
+\index{UserInterface.Plots.OxygenDissociationPlot@{UserInterface.Plots.OxygenDissociationPlot}!PreparePlot@{PreparePlot}}
+\index{PreparePlot@{PreparePlot}!UserInterface.Plots.OxygenDissociationPlot@{UserInterface.Plots.OxygenDissociationPlot}}
+\doxysubsubsection{\texorpdfstring{PreparePlot()}{PreparePlot()}}
+{\footnotesize\ttfamily override void User\+Interface.\+Plots.\+Oxygen\+Dissociation\+Plot.\+Prepare\+Plot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_user_interface_1_1_plots_1_1_multi_plot}{User\+Interface.\+Plots.\+Multi\+Plot}}.
+
+\mbox{\Hypertarget{class_user_interface_1_1_plots_1_1_oxygen_dissociation_plot_ac68034d2f7b048c274aef86a0b763454}\label{class_user_interface_1_1_plots_1_1_oxygen_dissociation_plot_ac68034d2f7b048c274aef86a0b763454}} 
+\index{UserInterface.Plots.OxygenDissociationPlot@{UserInterface.Plots.OxygenDissociationPlot}!RegisterInstance@{RegisterInstance}}
+\index{RegisterInstance@{RegisterInstance}!UserInterface.Plots.OxygenDissociationPlot@{UserInterface.Plots.OxygenDissociationPlot}}
+\doxysubsubsection{\texorpdfstring{RegisterInstance()}{RegisterInstance()}}
+{\footnotesize\ttfamily override void User\+Interface.\+Plots.\+Oxygen\+Dissociation\+Plot.\+Register\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}}]{instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_user_interface_1_1_plots_1_1_multi_plot}{User\+Interface.\+Plots.\+Multi\+Plot}}.
+
+\mbox{\Hypertarget{class_user_interface_1_1_plots_1_1_oxygen_dissociation_plot_ac36e5793f49d73ad9c885c2d457bbe58}\label{class_user_interface_1_1_plots_1_1_oxygen_dissociation_plot_ac36e5793f49d73ad9c885c2d457bbe58}} 
+\index{UserInterface.Plots.OxygenDissociationPlot@{UserInterface.Plots.OxygenDissociationPlot}!UnregisterInstance@{UnregisterInstance}}
+\index{UnregisterInstance@{UnregisterInstance}!UserInterface.Plots.OxygenDissociationPlot@{UserInterface.Plots.OxygenDissociationPlot}}
+\doxysubsubsection{\texorpdfstring{UnregisterInstance()}{UnregisterInstance()}}
+{\footnotesize\ttfamily override void User\+Interface.\+Plots.\+Oxygen\+Dissociation\+Plot.\+Unregister\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}}]{instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_user_interface_1_1_plots_1_1_multi_plot}{User\+Interface.\+Plots.\+Multi\+Plot}}.
+
+\mbox{\Hypertarget{class_user_interface_1_1_plots_1_1_oxygen_dissociation_plot_a5d9116393f426e577ecb9a393d6f7618}\label{class_user_interface_1_1_plots_1_1_oxygen_dissociation_plot_a5d9116393f426e577ecb9a393d6f7618}} 
+\index{UserInterface.Plots.OxygenDissociationPlot@{UserInterface.Plots.OxygenDissociationPlot}!UpdateDataSet@{UpdateDataSet}}
+\index{UpdateDataSet@{UpdateDataSet}!UserInterface.Plots.OxygenDissociationPlot@{UserInterface.Plots.OxygenDissociationPlot}}
+\doxysubsubsection{\texorpdfstring{UpdateDataSet()}{UpdateDataSet()}}
+{\footnotesize\ttfamily override void User\+Interface.\+Plots.\+Oxygen\+Dissociation\+Plot.\+Update\+Data\+Set (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}}]{instance,  }\item[{Plotter.\+Graph\+Descriptor}]{graph }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_user_interface_1_1_plots_1_1_multi_plot}{User\+Interface.\+Plots.\+Multi\+Plot}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+User\+Interface/\+Output/\+Plots/\+Scripts/Oxygen\+Dissociation\+Plot.\+cs\end{DoxyCompactItemize}

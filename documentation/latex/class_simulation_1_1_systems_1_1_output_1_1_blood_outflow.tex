@@ -1,0 +1,106 @@
+\hypertarget{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow}{}\doxysection{Simulation.\+Systems.\+Output.\+Blood\+Outflow Class Reference}
+\label{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow}\index{Simulation.Systems.Output.BloodOutflow@{Simulation.Systems.Output.BloodOutflow}}
+
+
+This class calculates the oxygen uptake of individual erythrocytes as they reach the end of the capillary. These results are added to a total oxygen uptake until the simulation is reset. Additionally, the transit time of the erythrocyte along the capillary is determined.  
+
+
+Inheritance diagram for Simulation.\+Systems.\+Output.\+Blood\+Outflow\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_ac944b661c44082f92d80b2f593887f51}{Subscribe}} (Parameters\+Data.\+Update\+Values method)
+\begin{DoxyCompactList}\small\item\em Subscribe a method to be called whenever \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector}{Output\+Collector}} updates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_ae0aed80f6c000aa0d6e5a2e75ba5e9bb}{Unsubscribe}} (Parameters\+Data.\+Update\+Values method)
+\begin{DoxyCompactList}\small\item\em Unsubscribe a method from getting called on \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector}{Output\+Collector}} changes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_a67a2bfba8f493bdd3082ce7b0a2d6132}{Handle\+Reset}} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance)
+\item 
+override void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_aaf3b1a6d1e04e23542a8f4a5d86b41b6}{Handle\+Parameters\+Updated}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_a91e0c253b701039c83de289f71e76b51}\label{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_a91e0c253b701039c83de289f71e76b51}} 
+bool {\bfseries ery\+At\+End}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Signal when an erythrocyte has reached the end of the main capillary. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_af462f53f72ce2c81699907a41ae154f0}\label{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_af462f53f72ce2c81699907a41ae154f0}} 
+float {\bfseries o2\+Sat\+Difference}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Difference in oxygen saturation of an erythrocyte from the start of the main capillary to its end. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_aa39239d3e4db229b3779570de58349f4}\label{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_aa39239d3e4db229b3779570de58349f4}} 
+float {\bfseries o2\+Uptake\+Total}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Total mass of oxygen \mbox{[}ng\mbox{]} taken up by the blood as it passes through the capillary, added up over time until simulation is reset. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_abc969392d57405e07eb1296f15c9c07f}\label{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_abc969392d57405e07eb1296f15c9c07f}} 
+float {\bfseries o2\+Uptake\+Volume}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Total oxygen volume \mbox{[}µm³\mbox{]} taken up by the blood as it passes through the capillary, added up over time until simulation is reset. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_a88406c53ed11166e3223655cf6d20681}\label{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_a88406c53ed11166e3223655cf6d20681}} 
+float {\bfseries blood\+Transit\+Time}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The time it takes for an erythrocyte to pass the capillary. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class calculates the oxygen uptake of individual erythrocytes as they reach the end of the capillary. These results are added to a total oxygen uptake until the simulation is reset. Additionally, the transit time of the erythrocyte along the capillary is determined. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_aaf3b1a6d1e04e23542a8f4a5d86b41b6}\label{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_aaf3b1a6d1e04e23542a8f4a5d86b41b6}} 
+\index{Simulation.Systems.Output.BloodOutflow@{Simulation.Systems.Output.BloodOutflow}!HandleParametersUpdated@{HandleParametersUpdated}}
+\index{HandleParametersUpdated@{HandleParametersUpdated}!Simulation.Systems.Output.BloodOutflow@{Simulation.Systems.Output.BloodOutflow}}
+\doxysubsubsection{\texorpdfstring{HandleParametersUpdated()}{HandleParametersUpdated()}}
+{\footnotesize\ttfamily override void Simulation.\+Systems.\+Output.\+Blood\+Outflow.\+Handle\+Parameters\+Updated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_component}{Simulation.\+Systems.\+Alveolus\+Component}}.
+
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_a67a2bfba8f493bdd3082ce7b0a2d6132}\label{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_a67a2bfba8f493bdd3082ce7b0a2d6132}} 
+\index{Simulation.Systems.Output.BloodOutflow@{Simulation.Systems.Output.BloodOutflow}!HandleReset@{HandleReset}}
+\index{HandleReset@{HandleReset}!Simulation.Systems.Output.BloodOutflow@{Simulation.Systems.Output.BloodOutflow}}
+\doxysubsubsection{\texorpdfstring{HandleReset()}{HandleReset()}}
+{\footnotesize\ttfamily override void Simulation.\+Systems.\+Output.\+Blood\+Outflow.\+Handle\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}}]{instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_component}{Simulation.\+Systems.\+Alveolus\+Component}}.
+
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_ac944b661c44082f92d80b2f593887f51}\label{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_ac944b661c44082f92d80b2f593887f51}} 
+\index{Simulation.Systems.Output.BloodOutflow@{Simulation.Systems.Output.BloodOutflow}!Subscribe@{Subscribe}}
+\index{Subscribe@{Subscribe}!Simulation.Systems.Output.BloodOutflow@{Simulation.Systems.Output.BloodOutflow}}
+\doxysubsubsection{\texorpdfstring{Subscribe()}{Subscribe()}}
+{\footnotesize\ttfamily void Simulation.\+Systems.\+Output.\+Blood\+Outflow.\+Subscribe (\begin{DoxyParamCaption}\item[{Parameters\+Data.\+Update\+Values}]{method }\end{DoxyParamCaption})}
+
+
+
+Subscribe a method to be called whenever \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector}{Output\+Collector}} updates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method} & Method to be called.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_ae0aed80f6c000aa0d6e5a2e75ba5e9bb}\label{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow_ae0aed80f6c000aa0d6e5a2e75ba5e9bb}} 
+\index{Simulation.Systems.Output.BloodOutflow@{Simulation.Systems.Output.BloodOutflow}!Unsubscribe@{Unsubscribe}}
+\index{Unsubscribe@{Unsubscribe}!Simulation.Systems.Output.BloodOutflow@{Simulation.Systems.Output.BloodOutflow}}
+\doxysubsubsection{\texorpdfstring{Unsubscribe()}{Unsubscribe()}}
+{\footnotesize\ttfamily void Simulation.\+Systems.\+Output.\+Blood\+Outflow.\+Unsubscribe (\begin{DoxyParamCaption}\item[{Parameters\+Data.\+Update\+Values}]{method }\end{DoxyParamCaption})}
+
+
+
+Unsubscribe a method from getting called on \mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector}{Output\+Collector}} changes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method} & Method to unsubscribe.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Simulation/\+Systems/\+Output/Blood\+Outflow.\+cs\end{DoxyCompactItemize}

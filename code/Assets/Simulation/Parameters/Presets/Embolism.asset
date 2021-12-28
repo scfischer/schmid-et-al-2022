@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c46da48c9bc894f92898fe564b0645, type: 3}
+  m_Name: Embolism
+  m_EditorClassIdentifier: 
+  description: "Pulmonary embolism occurs when a clump of material, \nmost often
+    a blood clot, blocks an artery in the lungs.\n\nThese blood clots most commonly
+    come from the deep \nveins of the legs, a condition known as deep vein thrombosis
+    (DVT).\r\nThe affected area downstream of the embolus is not \nperfused and cannot
+    contribute to gas exchange. \nIn the rest of the lung however, the pulmonary
+    vascular \npressure increases and causes a slight backflow of blood \nto the
+    right side of the heart. This can lead to complications \nlike right-sided heart
+    failure.\r\n"
+  atmosphericPressureDefault: 760
+  alveolarPpO2Default: 100
+  bloodPpO2Default: 40
+  alveolarPpCo2Default: 40
+  bloodPpCo2Default: 45
+  bloodpHRBCDefault: 7.24
+  bloodVolumeDefault: 1
+  bloodFlowVelocityDefault: 0.01
+  bloodTemperatureDefault: 37
+  concentrationDPGDefault: 4.65
+  surfaceAreaDefault: 121000
+  barrierThicknessDefault: 1.11
+  alveolarPpH2O: 45
+  NumberCapillaries: 52

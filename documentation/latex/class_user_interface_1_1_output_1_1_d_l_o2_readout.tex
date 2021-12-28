@@ -1,0 +1,42 @@
+\hypertarget{class_user_interface_1_1_output_1_1_d_l_o2_readout}{}\doxysection{User\+Interface.\+Output.\+DLO2\+Readout Class Reference}
+\label{class_user_interface_1_1_output_1_1_d_l_o2_readout}\index{UserInterface.Output.DLO2Readout@{UserInterface.Output.DLO2Readout}}
+
+
+This class determines the diffusion capacity of the lung for oxygen (\char`\"{}\+DLO2\char`\"{}) from the simulation output. It passes the result to the appropriate display in the UI.  
+
+
+Inheritance diagram for User\+Interface.\+Output.\+DLO2\+Readout\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_user_interface_1_1_output_1_1_d_l_o2_readout}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_user_interface_1_1_output_1_1_d_l_o2_readout_a06bfb5d979d246866f7139e7e47c6dd3}{Handle\+Simulation\+Output\+Changed}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class determines the diffusion capacity of the lung for oxygen (\char`\"{}\+DLO2\char`\"{}) from the simulation output. It passes the result to the appropriate display in the UI. 
+
+\mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector_a0937e895b4fe57c8c67de8aa236e59ef}{Simulation.\+Systems.\+Output.\+Output\+Collector.\+o2\+Uptake\+Volume}} is extrapolated to the whole lung by multiplication with the number of alveoli in the human lung (480$\ast$10$^\wedge$6, Ochs et al., 2004). DLO2 is calculated as oxygen uptake divided by simulation time and the mean gradient of p\+O2 between alveolar space and the blood. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_interface_1_1_output_1_1_d_l_o2_readout_a06bfb5d979d246866f7139e7e47c6dd3}\label{class_user_interface_1_1_output_1_1_d_l_o2_readout_a06bfb5d979d246866f7139e7e47c6dd3}} 
+\index{UserInterface.Output.DLO2Readout@{UserInterface.Output.DLO2Readout}!HandleSimulationOutputChanged@{HandleSimulationOutputChanged}}
+\index{HandleSimulationOutputChanged@{HandleSimulationOutputChanged}!UserInterface.Output.DLO2Readout@{UserInterface.Output.DLO2Readout}}
+\doxysubsubsection{\texorpdfstring{HandleSimulationOutputChanged()}{HandleSimulationOutputChanged()}}
+{\footnotesize\ttfamily override void User\+Interface.\+Output.\+DLO2\+Readout.\+Handle\+Simulation\+Output\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_user_interface_1_1_multi_instance_1_1_instance_consumer}{User\+Interface.\+Multi\+Instance.\+Instance\+Consumer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+User\+Interface/\+Output/\+Scripts/DLO2\+Readout.\+cs\end{DoxyCompactItemize}

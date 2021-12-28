@@ -1,0 +1,86 @@
+\hypertarget{class_simulation_1_1_systems_1_1_alveolus_controller}{}\doxysection{Simulation.\+Systems.\+Alveolus\+Controller Class Reference}
+\label{class_simulation_1_1_systems_1_1_alveolus_controller}\index{Simulation.Systems.AlveolusController@{Simulation.Systems.AlveolusController}}
+
+
+Represents the \mbox{\hyperlink{namespace_simulation_1_1_alveolus}{Alveolus}} Agent-\/\+Based Model as a single entity for external access. Provides internal access for Alveolus\+Components. Manages the \mbox{\hyperlink{class_simulation_1_1_parameters_data}{Parameters\+Data}} and the Reset, Pause, Focus and Unfocus events.  
+
+
+Inheritance diagram for Simulation.\+Systems.\+Alveolus\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_simulation_1_1_systems_1_1_alveolus_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller_1_1_alveolus_event}{Alveolus\+Event}}
+\item 
+class \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller_1_1_parameters_reset_event}{Parameters\+Reset\+Event}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_controller_a11415a96a01d969fa5bbd39d4bb8f1ec}\label{class_simulation_1_1_systems_1_1_alveolus_controller_a11415a96a01d969fa5bbd39d4bb8f1ec}} 
+void {\bfseries Pause} ()
+\begin{DoxyCompactList}\small\item\em Pause the simulation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_controller_a47b39fd1ba93fc9734ff2d4f736f8441}\label{class_simulation_1_1_systems_1_1_alveolus_controller_a47b39fd1ba93fc9734ff2d4f736f8441}} 
+void {\bfseries Reset} ()
+\begin{DoxyCompactList}\small\item\em Reset the simulation to the parameters as defined in the current \mbox{\hyperlink{class_simulation_1_1_parameters_data}{Parameters\+Data}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_controller_a746ac6662c4bb8a977530ed6b0d04f8e}\label{class_simulation_1_1_systems_1_1_alveolus_controller_a746ac6662c4bb8a977530ed6b0d04f8e}} 
+void {\bfseries Move\+Out\+Of\+Focus} ()
+\begin{DoxyCompactList}\small\item\em Move this alveolus prefab instance out of view and turn of unnecessary visualization, but keep the simulation going. ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_controller_a17ecf119e76b83d269742be7684de18f}\label{class_simulation_1_1_systems_1_1_alveolus_controller_a17ecf119e76b83d269742be7684de18f}} 
+void {\bfseries Return\+To\+Focus} ()
+\begin{DoxyCompactList}\small\item\em Move this alveolus prefab instance into view and make sure everything is visible again. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_controller_a25752072393914c2e424997e06ba914f}\label{class_simulation_1_1_systems_1_1_alveolus_controller_a25752072393914c2e424997e06ba914f}} 
+\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller_1_1_alveolus_event}{Alveolus\+Event}} {\bfseries on\+Parameters\+Instance\+Change} = new \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller_1_1_alveolus_event}{Alveolus\+Event}}()
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_controller_a43616c3a77a44b2032d38b1016353833}\label{class_simulation_1_1_systems_1_1_alveolus_controller_a43616c3a77a44b2032d38b1016353833}} 
+\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller_1_1_alveolus_event}{Alveolus\+Event}} {\bfseries on\+Focus} = new \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller_1_1_alveolus_event}{Alveolus\+Event}}()
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_controller_aa4762ace3298dfe329b92a230f411761}\label{class_simulation_1_1_systems_1_1_alveolus_controller_aa4762ace3298dfe329b92a230f411761}} 
+\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller_1_1_alveolus_event}{Alveolus\+Event}} {\bfseries on\+Defocus} = new \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller_1_1_alveolus_event}{Alveolus\+Event}}()
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_controller_a7ef7e0613eda6b72dfab3beaf097ed3c}\label{class_simulation_1_1_systems_1_1_alveolus_controller_a7ef7e0613eda6b72dfab3beaf097ed3c}} 
+\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller_1_1_alveolus_event}{Alveolus\+Event}} {\bfseries on\+Reset} = new \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller_1_1_alveolus_event}{Alveolus\+Event}}()
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_controller_a4832a56fe1bf40a8c836c9ac22989913}\label{class_simulation_1_1_systems_1_1_alveolus_controller_a4832a56fe1bf40a8c836c9ac22989913}} 
+\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller_1_1_alveolus_event}{Alveolus\+Event}} {\bfseries on\+Pause} = new \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller_1_1_alveolus_event}{Alveolus\+Event}}()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_controller_a5ca1b273a36925c12a17e1a7f90e9dd2}\label{class_simulation_1_1_systems_1_1_alveolus_controller_a5ca1b273a36925c12a17e1a7f90e9dd2}} 
+\mbox{\hyperlink{class_simulation_1_1_parameters_data}{Parameters\+Data}} {\bfseries instance\+Parameters}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_controller_a417370bca32149a8f27c5f85e83acac1}\label{class_simulation_1_1_systems_1_1_alveolus_controller_a417370bca32149a8f27c5f85e83acac1}} 
+\mbox{\hyperlink{class_user_interface_1_1_time_controls_1_1_time_control}{Time\+Control}} {\bfseries time\+Control}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Time\+Controls for this instace. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_controller_a9f0ca59298539199daf0a08197c33941}\label{class_simulation_1_1_systems_1_1_alveolus_controller_a9f0ca59298539199daf0a08197c33941}} 
+\mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure}{Partial\+Pressure}} {\bfseries partial\+Pressures}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Partial\+Pressures for this instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_controller_a9ac7bf6717c57c6b3c57e818c781f05a}\label{class_simulation_1_1_systems_1_1_alveolus_controller_a9ac7bf6717c57c6b3c57e818c781f05a}} 
+\mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation}{Hb\+Saturation}} {\bfseries hb\+Saturation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Hb\+Saturations for this instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_controller_ac7953018bb2bb763103af13dcea96faa}\label{class_simulation_1_1_systems_1_1_alveolus_controller_ac7953018bb2bb763103af13dcea96faa}} 
+\mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow}{Blood\+Outflow}} {\bfseries blood\+Outflow}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Blood\+Outflow script for this instance, that collects data on blood leaving the capillary. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_controller_ab01ebbc3324dd72b70153772eb6f4eb1}\label{class_simulation_1_1_systems_1_1_alveolus_controller_ab01ebbc3324dd72b70153772eb6f4eb1}} 
+\mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector}{Output\+Collector}} {\bfseries results}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Collected simulation results for this instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_controller_abde14d3d2d0f44d9e4ca8303839ae1f2}\label{class_simulation_1_1_systems_1_1_alveolus_controller_abde14d3d2d0f44d9e4ca8303839ae1f2}} 
+\mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_instance_highlight_targets}{Instance\+Highlight\+Targets}} {\bfseries highlight\+Targets}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Holds highlightable elements on this alveolus instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the \mbox{\hyperlink{namespace_simulation_1_1_alveolus}{Alveolus}} Agent-\/\+Based Model as a single entity for external access. Provides internal access for Alveolus\+Components. Manages the \mbox{\hyperlink{class_simulation_1_1_parameters_data}{Parameters\+Data}} and the Reset, Pause, Focus and Unfocus events. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Simulation/\+Systems/Alveolus\+Controller.\+cs\end{DoxyCompactItemize}

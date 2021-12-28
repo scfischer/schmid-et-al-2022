@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2392898356428737747
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 780.31995
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 333.82928
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5886144223750974180, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_Name
+      value: bloodPpCO2 info Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 5886144223750974180, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663996091368063692, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_text
+      value: "\nUnder normal conditions, deoxygenated blood coming from the heart
+        has a pCO2 of around 35 - 45 mmHg.\r\n\nAn increased metabolism or hypoventilation
+        causes hypercapnia (elevated pCO2 in the blood). \n\nIn the case of hypocapnia,
+        the pCO2 of the blood is lower than normal (e.g. due to hyperventilation)."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790693179741456995, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_text
+      value: 'Incoming Deoxygenated Blood: Partial Pressure of Carbon Dioxide'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6359fe8e0433d514890f238e3a9f09f0, type: 3}

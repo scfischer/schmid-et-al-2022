@@ -1,0 +1,72 @@
+\hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_alveolar_space}{}\doxysection{User\+Interface.\+Parameters.\+Controller.\+Alveolar\+Space Class Reference}
+\label{class_user_interface_1_1_parameters_1_1_controller_1_1_alveolar_space}\index{UserInterface.Parameters.Controller.AlveolarSpace@{UserInterface.Parameters.Controller.AlveolarSpace}}
+
+
+This class controls the user configuration of model parameters related to alveolar space.  
+
+
+Inheritance diagram for User\+Interface.\+Parameters.\+Controller.\+Alveolar\+Space\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_user_interface_1_1_parameters_1_1_controller_1_1_alveolar_space}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_alveolar_space_ab4d06afd591f4f567c2ccc2959e96b49}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_alveolar_space_ab4d06afd591f4f567c2ccc2959e96b49}} 
+\mbox{\hyperlink{class_user_interface_1_1_elements_1_1_parameter_slider}{Parameter\+Slider}} {\bfseries atmospheric\+Pressure\+Slider}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_alveolar_space_aa02dfce06fc5b1fcc4d8a2ca05e5ceff}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_alveolar_space_aa02dfce06fc5b1fcc4d8a2ca05e5ceff}} 
+\mbox{\hyperlink{class_user_interface_1_1_elements_1_1_parameter_slider}{Parameter\+Slider}} {\bfseries carbon\+Dioxide\+Slider}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_alveolar_space_a799623480f5a6d71250e79283404e8b9}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_alveolar_space_a799623480f5a6d71250e79283404e8b9}} 
+\mbox{\hyperlink{class_user_interface_1_1_elements_1_1_labeled_value}{Labeled\+Value}} {\bfseries carbon\+Dioxide\+Proportion}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_alveolar_space_a9c2b53ac43454c0c7d4857f69d063595}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_alveolar_space_a9c2b53ac43454c0c7d4857f69d063595}} 
+\mbox{\hyperlink{class_user_interface_1_1_elements_1_1_parameter_slider}{Parameter\+Slider}} {\bfseries oxygen\+Slider}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_alveolar_space_a49e85aaf1344d9693be595f1047c897d}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_alveolar_space_a49e85aaf1344d9693be595f1047c897d}} 
+\mbox{\hyperlink{class_user_interface_1_1_elements_1_1_labeled_value}{Labeled\+Value}} {\bfseries oxygen\+Proportion}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_user_interface_1_1_parameters_1_1_controller_1_1_alveolar_space_a7ad32b484aa1749bb6871cde94ec9ab2}{Parameters\+Data\+Changed\+Handler}} ()
+\item 
+override void \mbox{\hyperlink{class_user_interface_1_1_parameters_1_1_controller_1_1_alveolar_space_a5b045d06c319fb146c79eaa4aab1089d}{Subscribe\+Handler}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class controls the user configuration of model parameters related to alveolar space. 
+
+Input from the user is passed to Parameters\+Data of the corresponding instance. It takes into account which pressure unit is currently selected and converts the values accordingly if necessary (the model calculations are all performed in mm\+Hg). If changes are made in Parameters\+Data or another instance is selected, the parameter sliders are updated immediately. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_alveolar_space_a7ad32b484aa1749bb6871cde94ec9ab2}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_alveolar_space_a7ad32b484aa1749bb6871cde94ec9ab2}} 
+\index{UserInterface.Parameters.Controller.AlveolarSpace@{UserInterface.Parameters.Controller.AlveolarSpace}!ParametersDataChangedHandler@{ParametersDataChangedHandler}}
+\index{ParametersDataChangedHandler@{ParametersDataChangedHandler}!UserInterface.Parameters.Controller.AlveolarSpace@{UserInterface.Parameters.Controller.AlveolarSpace}}
+\doxysubsubsection{\texorpdfstring{ParametersDataChangedHandler()}{ParametersDataChangedHandler()}}
+{\footnotesize\ttfamily override void User\+Interface.\+Parameters.\+Controller.\+Alveolar\+Space.\+Parameters\+Data\+Changed\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_user_interface_1_1_parameters_1_1_data_1_1_parameters_data_consumer}{User\+Interface.\+Parameters.\+Data.\+Parameters\+Data\+Consumer}}.
+
+\mbox{\Hypertarget{class_user_interface_1_1_parameters_1_1_controller_1_1_alveolar_space_a5b045d06c319fb146c79eaa4aab1089d}\label{class_user_interface_1_1_parameters_1_1_controller_1_1_alveolar_space_a5b045d06c319fb146c79eaa4aab1089d}} 
+\index{UserInterface.Parameters.Controller.AlveolarSpace@{UserInterface.Parameters.Controller.AlveolarSpace}!SubscribeHandler@{SubscribeHandler}}
+\index{SubscribeHandler@{SubscribeHandler}!UserInterface.Parameters.Controller.AlveolarSpace@{UserInterface.Parameters.Controller.AlveolarSpace}}
+\doxysubsubsection{\texorpdfstring{SubscribeHandler()}{SubscribeHandler()}}
+{\footnotesize\ttfamily override void User\+Interface.\+Parameters.\+Controller.\+Alveolar\+Space.\+Subscribe\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_user_interface_1_1_parameters_1_1_data_1_1_parameters_data_consumer}{User\+Interface.\+Parameters.\+Data.\+Parameters\+Data\+Consumer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+User\+Interface/\+Parameters/\+Scripts/\+Controller/Alveolar\+Space.\+cs\end{DoxyCompactItemize}

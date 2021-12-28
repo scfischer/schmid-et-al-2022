@@ -1,0 +1,77 @@
+\hypertarget{class_user_interface_1_1_highlighting_1_1_instance_highlight_targets}{}\doxysection{User\+Interface.\+Highlighting.\+Instance\+Highlight\+Targets Class Reference}
+\label{class_user_interface_1_1_highlighting_1_1_instance_highlight_targets}\index{UserInterface.Highlighting.InstanceHighlightTargets@{UserInterface.Highlighting.InstanceHighlightTargets}}
+Inheritance diagram for User\+Interface.\+Highlighting.\+Instance\+Highlight\+Targets\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_user_interface_1_1_highlighting_1_1_instance_highlight_targets}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_instance_highlight_targets_a2d2b4643149197d6e4f49ea1e8d2650f}{Activate\+Highlight}} (string caller, string parameters=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Called by a \mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_highlight_trigger}{Highlight\+Trigger}} to enable the highlighting in the script associated with this trigger in highlight\+Associations. If the trigger has a string with additional parameters assigned, it is passed to the associated target. Disables other currently active highlights. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_instance_highlight_targets_ae852aab02447c196cf3e32bd6c321d60}{Deactivate\+Highlight}} (string caller, string parameters=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Called by a \mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_highlight_trigger}{Highlight\+Trigger}} to disable the highlighting in the script associated with this trigger in highlight\+Associations. If the trigger has a string with additional parameters assigned, it is passed to the associated target. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_instance_highlight_targets_a7e80c7e45f9fd62a2cd89dfbc567f54f}{Any\+Highlights}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_interface_1_1_highlighting_1_1_instance_highlight_targets_a2d2b4643149197d6e4f49ea1e8d2650f}\label{class_user_interface_1_1_highlighting_1_1_instance_highlight_targets_a2d2b4643149197d6e4f49ea1e8d2650f}} 
+\index{UserInterface.Highlighting.InstanceHighlightTargets@{UserInterface.Highlighting.InstanceHighlightTargets}!ActivateHighlight@{ActivateHighlight}}
+\index{ActivateHighlight@{ActivateHighlight}!UserInterface.Highlighting.InstanceHighlightTargets@{UserInterface.Highlighting.InstanceHighlightTargets}}
+\doxysubsubsection{\texorpdfstring{ActivateHighlight()}{ActivateHighlight()}}
+{\footnotesize\ttfamily bool User\+Interface.\+Highlighting.\+Instance\+Highlight\+Targets.\+Activate\+Highlight (\begin{DoxyParamCaption}\item[{string}]{caller,  }\item[{string}]{parameters = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Called by a \mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_highlight_trigger}{Highlight\+Trigger}} to enable the highlighting in the script associated with this trigger in highlight\+Associations. If the trigger has a string with additional parameters assigned, it is passed to the associated target. Disables other currently active highlights. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caller} & The caller which invokes this method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if \mbox{\hyperlink{interface_user_interface_1_1_highlighting_1_1_i_highlightable_a70e2e912e328c2b89e1aae6b8754c8ce}{IHighlightable.\+Enable\+Highlights}} was invoked on the associated target, false if no target was found for the provided caller. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_user_interface_1_1_highlighting_1_1_instance_highlight_targets_a7e80c7e45f9fd62a2cd89dfbc567f54f}\label{class_user_interface_1_1_highlighting_1_1_instance_highlight_targets_a7e80c7e45f9fd62a2cd89dfbc567f54f}} 
+\index{UserInterface.Highlighting.InstanceHighlightTargets@{UserInterface.Highlighting.InstanceHighlightTargets}!AnyHighlights@{AnyHighlights}}
+\index{AnyHighlights@{AnyHighlights}!UserInterface.Highlighting.InstanceHighlightTargets@{UserInterface.Highlighting.InstanceHighlightTargets}}
+\doxysubsubsection{\texorpdfstring{AnyHighlights()}{AnyHighlights()}}
+{\footnotesize\ttfamily bool User\+Interface.\+Highlighting.\+Instance\+Highlight\+Targets.\+Any\+Highlights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_user_interface_1_1_highlighting_1_1_instance_highlight_targets_ae852aab02447c196cf3e32bd6c321d60}\label{class_user_interface_1_1_highlighting_1_1_instance_highlight_targets_ae852aab02447c196cf3e32bd6c321d60}} 
+\index{UserInterface.Highlighting.InstanceHighlightTargets@{UserInterface.Highlighting.InstanceHighlightTargets}!DeactivateHighlight@{DeactivateHighlight}}
+\index{DeactivateHighlight@{DeactivateHighlight}!UserInterface.Highlighting.InstanceHighlightTargets@{UserInterface.Highlighting.InstanceHighlightTargets}}
+\doxysubsubsection{\texorpdfstring{DeactivateHighlight()}{DeactivateHighlight()}}
+{\footnotesize\ttfamily bool User\+Interface.\+Highlighting.\+Instance\+Highlight\+Targets.\+Deactivate\+Highlight (\begin{DoxyParamCaption}\item[{string}]{caller,  }\item[{string}]{parameters = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Called by a \mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_highlight_trigger}{Highlight\+Trigger}} to disable the highlighting in the script associated with this trigger in highlight\+Associations. If the trigger has a string with additional parameters assigned, it is passed to the associated target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caller} & The caller which invokes this method.\\
+\hline
+{\em parameters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if \mbox{\hyperlink{interface_user_interface_1_1_highlighting_1_1_i_highlightable_a9877baa2beee1870faad754120a637ea}{IHighlightable.\+Disable\+Highlights}} was invoked on the associated target, false if no target was found for the provided caller. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+User\+Interface/\+Highlighting/\+Scripts/Instance\+Highlight\+Targets.\+cs\end{DoxyCompactItemize}

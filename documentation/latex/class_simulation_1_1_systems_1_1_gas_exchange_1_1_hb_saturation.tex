@@ -1,0 +1,187 @@
+\hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation}{}\doxysection{Simulation.\+Systems.\+Gas\+Exchange.\+Hb\+Saturation Class Reference}
+\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation}\index{Simulation.Systems.GasExchange.HbSaturation@{Simulation.Systems.GasExchange.HbSaturation}}
+
+
+This class performs the calculations of hemoglobin (Hb) saturation with oxygen as red blood cells progress along the respiratory capillary -\/ i.\+e. the resulting saturation values are obtained for every capillary section.  
+
+
+Inheritance diagram for Simulation.\+Systems.\+Gas\+Exchange.\+Hb\+Saturation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_ae39b5423f82236a97825aab6e326aa85}{Subscribe}} (Parameters\+Data.\+Update\+Values method)
+\begin{DoxyCompactList}\small\item\em Subscribe a method to be called whenever \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation}{Hb\+Saturation}} updates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_a789ab38f5464da2456d05903f6eeed8a}{Unsubscribe}} (Parameters\+Data.\+Update\+Values method)
+\begin{DoxyCompactList}\small\item\em Unsubscribe a method from getting called on \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation}{Hb\+Saturation}} changes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_a6fd3d522f6f4bdef2626d976b7b93682}{Calculate\+Hb\+O2\+Saturations}} (in float\mbox{[}$\,$\mbox{]} p\+O2, in float\mbox{[}$\,$\mbox{]} p\+Co2, out float\mbox{[}$\,$\mbox{]} hb\+O2\+Saturations)
+\begin{DoxyCompactList}\small\item\em This method instructs the calculation of hemoglobin oxygen saturation for each capillary section and stores the results in an array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_abec27d281f81bba796dd98f5ed99a8fd}{Calculate\+Hb\+O2\+Saturation}} (in float p\+O2, in float p\+Co2, out float hb\+O2\+Sat)
+\begin{DoxyCompactList}\small\item\em This method performs the key calculations that yield the saturation of hemoglobin with oxygen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_a14d136242674c12df28b32b407554e64}{Provide\+Dissociation\+Curve\+Data}} (float p\+Co2, float p\+O2\+Min, float p\+O2\+Max, int num\+Values, out float\mbox{[}$\,$\mbox{]} p\+O2\+Set, out float\mbox{[}$\,$\mbox{]} hb\+O2\+Saturations)
+\begin{DoxyCompactList}\small\item\em This method instructs the calculation of hemoglobin oxygen saturation values to be plotted in the oxygen dissociation curve. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_ad1c627a98ac25fb811f663e88fc08e1b}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_ad1c627a98ac25fb811f663e88fc08e1b}} 
+void {\bfseries Calculate\+P50\+DeltaT} ()
+\begin{DoxyCompactList}\small\item\em Calculate the polynomial expression for the effect of temperature on the oxygen partial pressure for P50. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_a895c190196553a0de029b2060a91eeac}{Handle\+Reset}} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance)
+\item 
+override void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_a4a3d5a1b1cfdd5090fbf66c065069b38}{Handle\+Parameters\+Updated}} ()
+\begin{DoxyCompactList}\small\item\em Fetch new parameter values, recalculate solubilities and Hb saturation accordingly, then alert all subscribers if there are updates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_aca5a11d1f270ffabc8ccaccec11067bf}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_aca5a11d1f270ffabc8ccaccec11067bf}} 
+float\mbox{[}$\,$\mbox{]} {\bfseries hb\+O2\+Saturation} = new float\mbox{[}1\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Hemoglobin oxygen saturation, final output of \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_a6fd3d522f6f4bdef2626d976b7b93682}{Calculate\+Hb\+O2\+Saturations}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class performs the calculations of hemoglobin (Hb) saturation with oxygen as red blood cells progress along the respiratory capillary -\/ i.\+e. the resulting saturation values are obtained for every capillary section. 
+
+O2 binding to and dissociation from hemoglobin is depending on factors like the respective partial pressures of the respiratory gases in the blood p\+O2\+Blood\+Array and p\+Co2\+Blood\+Array, blood temperature blood\+Temperature, the pH of red blood cells PHrbc and concentration of the organic phosphate 2,3-\/DPG in the blood concentration\+Dpg. The mathematical model used to express these dependencies and respective contstants was adopted from (Dash et al., 2016). 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_abec27d281f81bba796dd98f5ed99a8fd}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_abec27d281f81bba796dd98f5ed99a8fd}} 
+\index{Simulation.Systems.GasExchange.HbSaturation@{Simulation.Systems.GasExchange.HbSaturation}!CalculateHbO2Saturation@{CalculateHbO2Saturation}}
+\index{CalculateHbO2Saturation@{CalculateHbO2Saturation}!Simulation.Systems.GasExchange.HbSaturation@{Simulation.Systems.GasExchange.HbSaturation}}
+\doxysubsubsection{\texorpdfstring{CalculateHbO2Saturation()}{CalculateHbO2Saturation()}}
+{\footnotesize\ttfamily void Simulation.\+Systems.\+Gas\+Exchange.\+Hb\+Saturation.\+Calculate\+Hb\+O2\+Saturation (\begin{DoxyParamCaption}\item[{in float}]{p\+O2,  }\item[{in float}]{p\+Co2,  }\item[{out float}]{hb\+O2\+Sat }\end{DoxyParamCaption})}
+
+
+
+This method performs the key calculations that yield the saturation of hemoglobin with oxygen. 
+
+First, the p50 value for the current conditions is obtained from P50(float) and the Hill coefficient nH for the current p\+O2 is obatined from Hill(float). With these values, hemoglobin oxygen saturation can be calculated in a Hill equation as proposed by (Dash et al., 2016). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+O2} & Partial pressure of oxygen in the blood.\\
+\hline
+{\em p\+Co2} & Partial pressure of carbon dioxide in the blood.\\
+\hline
+{\em hb\+O2\+Sat} & \mbox{\hyperlink{namespace_simulation_1_1_systems_1_1_output}{Output}} for hemoglobin oxygen saturation.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_a6fd3d522f6f4bdef2626d976b7b93682}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_a6fd3d522f6f4bdef2626d976b7b93682}} 
+\index{Simulation.Systems.GasExchange.HbSaturation@{Simulation.Systems.GasExchange.HbSaturation}!CalculateHbO2Saturations@{CalculateHbO2Saturations}}
+\index{CalculateHbO2Saturations@{CalculateHbO2Saturations}!Simulation.Systems.GasExchange.HbSaturation@{Simulation.Systems.GasExchange.HbSaturation}}
+\doxysubsubsection{\texorpdfstring{CalculateHbO2Saturations()}{CalculateHbO2Saturations()}}
+{\footnotesize\ttfamily void Simulation.\+Systems.\+Gas\+Exchange.\+Hb\+Saturation.\+Calculate\+Hb\+O2\+Saturations (\begin{DoxyParamCaption}\item[{in float\mbox{[}$\,$\mbox{]}}]{p\+O2,  }\item[{in float\mbox{[}$\,$\mbox{]}}]{p\+Co2,  }\item[{out float\mbox{[}$\,$\mbox{]}}]{hb\+O2\+Saturations }\end{DoxyParamCaption})}
+
+
+
+This method instructs the calculation of hemoglobin oxygen saturation for each capillary section and stores the results in an array. 
+
+This method iterates over the values in the arrays and calls \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_abec27d281f81bba796dd98f5ed99a8fd}{Calculate\+Hb\+O2\+Saturation(in float,in float,out float)}} for each set of values. {\ttfamily hb\+O2\+Saturations\mbox{[}i\mbox{]}} is calculated from {\ttfamily p\+O2\mbox{[}i\mbox{]}} and {\ttfamily p\+Co2\mbox{[}i\mbox{]}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+O2} & Array of oxygen partial pressure values of all capillary sections. \\
+\hline
+{\em p\+Co2} & Array of carbon dioxide partial pressure values of all capillary sections. \\
+\hline
+{\em hb\+O2\+Saturations} & \mbox{\hyperlink{namespace_simulation_1_1_systems_1_1_output}{Output}} array of hemoglobin oxygen saturation values of all capillary sections.\texorpdfstring{$<$}{<} /param\texorpdfstring{$>$}{>} 
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown when length of O2 and CO2 partial pressure arrays doesn\textquotesingle{}t match.\\
+\hline
+\end{DoxyExceptions}
+\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_a4a3d5a1b1cfdd5090fbf66c065069b38}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_a4a3d5a1b1cfdd5090fbf66c065069b38}} 
+\index{Simulation.Systems.GasExchange.HbSaturation@{Simulation.Systems.GasExchange.HbSaturation}!HandleParametersUpdated@{HandleParametersUpdated}}
+\index{HandleParametersUpdated@{HandleParametersUpdated}!Simulation.Systems.GasExchange.HbSaturation@{Simulation.Systems.GasExchange.HbSaturation}}
+\doxysubsubsection{\texorpdfstring{HandleParametersUpdated()}{HandleParametersUpdated()}}
+{\footnotesize\ttfamily override void Simulation.\+Systems.\+Gas\+Exchange.\+Hb\+Saturation.\+Handle\+Parameters\+Updated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Fetch new parameter values, recalculate solubilities and Hb saturation accordingly, then alert all subscribers if there are updates. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_component}{Simulation.\+Systems.\+Alveolus\+Component}}.
+
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_a895c190196553a0de029b2060a91eeac}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_a895c190196553a0de029b2060a91eeac}} 
+\index{Simulation.Systems.GasExchange.HbSaturation@{Simulation.Systems.GasExchange.HbSaturation}!HandleReset@{HandleReset}}
+\index{HandleReset@{HandleReset}!Simulation.Systems.GasExchange.HbSaturation@{Simulation.Systems.GasExchange.HbSaturation}}
+\doxysubsubsection{\texorpdfstring{HandleReset()}{HandleReset()}}
+{\footnotesize\ttfamily override void Simulation.\+Systems.\+Gas\+Exchange.\+Hb\+Saturation.\+Handle\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}}]{instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_component}{Simulation.\+Systems.\+Alveolus\+Component}}.
+
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_a14d136242674c12df28b32b407554e64}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_a14d136242674c12df28b32b407554e64}} 
+\index{Simulation.Systems.GasExchange.HbSaturation@{Simulation.Systems.GasExchange.HbSaturation}!ProvideDissociationCurveData@{ProvideDissociationCurveData}}
+\index{ProvideDissociationCurveData@{ProvideDissociationCurveData}!Simulation.Systems.GasExchange.HbSaturation@{Simulation.Systems.GasExchange.HbSaturation}}
+\doxysubsubsection{\texorpdfstring{ProvideDissociationCurveData()}{ProvideDissociationCurveData()}}
+{\footnotesize\ttfamily void Simulation.\+Systems.\+Gas\+Exchange.\+Hb\+Saturation.\+Provide\+Dissociation\+Curve\+Data (\begin{DoxyParamCaption}\item[{float}]{p\+Co2,  }\item[{float}]{p\+O2\+Min,  }\item[{float}]{p\+O2\+Max,  }\item[{int}]{num\+Values,  }\item[{out float\mbox{[}$\,$\mbox{]}}]{p\+O2\+Set,  }\item[{out float\mbox{[}$\,$\mbox{]}}]{hb\+O2\+Saturations }\end{DoxyParamCaption})}
+
+
+
+This method instructs the calculation of hemoglobin oxygen saturation values to be plotted in the oxygen dissociation curve. 
+
+It creates an array of num\+Values evenly distributed oxygen partial pressure values from p\+O2\+Min (inclusive) to p\+O2\+Max (inclusive). The method \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_abec27d281f81bba796dd98f5ed99a8fd}{Calculate\+Hb\+O2\+Saturation(in float, in float, out float)}} is called to calculate the respective hemoglobin oxygen saturation value from every p\+O2 value in this array and the current p\+CO2 of the blood. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+Co2} & Current partial pressure of carbon dioxide in the (incoming) blood.\\
+\hline
+{\em p\+O2\+Min} & Lower limit of the range of oxygen partial pressure values.\\
+\hline
+{\em p\+O2\+Max} & Upper limit of the range of oxygen partial pressure values.\\
+\hline
+{\em num\+Values} & Number of datapoints, minimum 2 (for {\ttfamily p\+O2\+Min} and {\ttfamily PO2\+Max}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Array of {\ttfamily num\+Values} evenly distributed p\+O2 values in order from {\ttfamily p\+O2\+Min} to {\ttfamily PO2\+Max} and the corresponding hemoglobin oxygen saturation values.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Exception} & Thrown when num\+Values is less than 2\\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_ae39b5423f82236a97825aab6e326aa85}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_ae39b5423f82236a97825aab6e326aa85}} 
+\index{Simulation.Systems.GasExchange.HbSaturation@{Simulation.Systems.GasExchange.HbSaturation}!Subscribe@{Subscribe}}
+\index{Subscribe@{Subscribe}!Simulation.Systems.GasExchange.HbSaturation@{Simulation.Systems.GasExchange.HbSaturation}}
+\doxysubsubsection{\texorpdfstring{Subscribe()}{Subscribe()}}
+{\footnotesize\ttfamily void Simulation.\+Systems.\+Gas\+Exchange.\+Hb\+Saturation.\+Subscribe (\begin{DoxyParamCaption}\item[{Parameters\+Data.\+Update\+Values}]{method }\end{DoxyParamCaption})}
+
+
+
+Subscribe a method to be called whenever \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation}{Hb\+Saturation}} updates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method} & Method to be called.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_a789ab38f5464da2456d05903f6eeed8a}\label{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation_a789ab38f5464da2456d05903f6eeed8a}} 
+\index{Simulation.Systems.GasExchange.HbSaturation@{Simulation.Systems.GasExchange.HbSaturation}!Unsubscribe@{Unsubscribe}}
+\index{Unsubscribe@{Unsubscribe}!Simulation.Systems.GasExchange.HbSaturation@{Simulation.Systems.GasExchange.HbSaturation}}
+\doxysubsubsection{\texorpdfstring{Unsubscribe()}{Unsubscribe()}}
+{\footnotesize\ttfamily void Simulation.\+Systems.\+Gas\+Exchange.\+Hb\+Saturation.\+Unsubscribe (\begin{DoxyParamCaption}\item[{Parameters\+Data.\+Update\+Values}]{method }\end{DoxyParamCaption})}
+
+
+
+Unsubscribe a method from getting called on \mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation}{Hb\+Saturation}} changes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em method} & Method to unsubscribe.\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Simulation/\+Systems/\+Gas\+Exchange/Hb\+Saturation.\+cs\end{DoxyCompactItemize}

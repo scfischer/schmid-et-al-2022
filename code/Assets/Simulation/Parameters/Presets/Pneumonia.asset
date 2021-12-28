@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c46da48c9bc894f92898fe564b0645, type: 3}
+  m_Name: Pneumonia
+  m_EditorClassIdentifier: 
+  description: "The most common cause of pneumonia are bacteria, \nbesides other
+    possibilities: viral (influenza, corona \nviruses) and  fungal. \n\nBacteria
+    reaching the lower respiratory tract secrete \nendotoxins that cause tissue damage.
+    In response, \ninflammatory mediators induce bronchoconstriction,\nvasodilation
+    (widening of blood vessels) and an \nincrease of capillary permeability. Consequently,
+    fluids \nand cells accumulate in the alveolar space (edema).\r"
+  atmosphericPressureDefault: 760
+  alveolarPpO2Default: 100
+  bloodPpO2Default: 40
+  alveolarPpCo2Default: 40
+  bloodPpCo2Default: 45
+  bloodpHRBCDefault: 7.24
+  bloodVolumeDefault: 404000
+  bloodFlowVelocityDefault: 1
+  bloodTemperatureDefault: 39
+  concentrationDPGDefault: 4.65
+  surfaceAreaDefault: 75000
+  barrierThicknessDefault: 2
+  alveolarPpH2O: 45

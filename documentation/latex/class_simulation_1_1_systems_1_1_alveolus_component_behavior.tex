@@ -1,0 +1,63 @@
+\hypertarget{class_simulation_1_1_systems_1_1_alveolus_component_behavior}{}\doxysection{Simulation.\+Systems.\+Alveolus\+Component\+Behavior Class Reference}
+\label{class_simulation_1_1_systems_1_1_alveolus_component_behavior}\index{Simulation.Systems.AlveolusComponentBehavior@{Simulation.Systems.AlveolusComponentBehavior}}
+
+
+A base class for simulation components that are also Mono\+Behaviors, searching for an Instance either as a serialized reference or upwards in the hierarchy. It provides easy access to other simulation components through \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}. When Set\+Instance is called with a new \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}, Listeners are automatically updated, e.\+g to react to changes in the Parameter\+Data instance. Furthermore, if a Parameter\+Data instance is already set on the \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}, the Handle\+Reset method is called. This allows to react to any kind of initialization by properly implementing Handle\+Reset.  
+
+
+Inheritance diagram for Simulation.\+Systems.\+Alveolus\+Component\+Behavior\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.208426cm]{class_simulation_1_1_systems_1_1_alveolus_component_behavior}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_component_behavior_aae4c2b220812f014d78d5a5532f15411}\label{class_simulation_1_1_systems_1_1_alveolus_component_behavior_aae4c2b220812f014d78d5a5532f15411}} 
+virtual void {\bfseries On\+Destroy} ()
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_component_behavior_a9b869920c21d845c48013a09aaa4f8ee}\label{class_simulation_1_1_systems_1_1_alveolus_component_behavior_a9b869920c21d845c48013a09aaa4f8ee}} 
+void {\bfseries Awake} ()
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_component_behavior_aaa98819d0d12b2c1fc1021a47bb08a56}\label{class_simulation_1_1_systems_1_1_alveolus_component_behavior_aaa98819d0d12b2c1fc1021a47bb08a56}} 
+void {\bfseries Start} ()
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_component_behavior_a0a71090cd07af4bd24d08686fab3a8c4}\label{class_simulation_1_1_systems_1_1_alveolus_component_behavior_a0a71090cd07af4bd24d08686fab3a8c4}} 
+virtual void {\bfseries Handle\+Reset} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance)
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_component_behavior_a524358551b12534878373d4bcd44ba3d}\label{class_simulation_1_1_systems_1_1_alveolus_component_behavior_a524358551b12534878373d4bcd44ba3d}} 
+virtual void {\bfseries Handle\+Pause} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance)
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_component_behavior_a92e52432b5792418e0a81d8ff62db55e}\label{class_simulation_1_1_systems_1_1_alveolus_component_behavior_a92e52432b5792418e0a81d8ff62db55e}} 
+virtual void {\bfseries Handle\+Parameters\+Updated} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_component_behavior_a7d80df1424781c54990de2dc562db569}\label{class_simulation_1_1_systems_1_1_alveolus_component_behavior_a7d80df1424781c54990de2dc562db569}} 
+\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} {\bfseries Alveolus}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_component_behavior_a459e1a0e047e45350b95d00a9cb0c16a}\label{class_simulation_1_1_systems_1_1_alveolus_component_behavior_a459e1a0e047e45350b95d00a9cb0c16a}} 
+\mbox{\hyperlink{class_simulation_1_1_parameters_data}{Parameters\+Data}} {\bfseries Parameters}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_component_behavior_a289a345acc1eb274dc669fa6d2b25996}\label{class_simulation_1_1_systems_1_1_alveolus_component_behavior_a289a345acc1eb274dc669fa6d2b25996}} 
+\mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_partial_pressure}{Partial\+Pressure}} {\bfseries Partial\+Pressure}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_component_behavior_ad3cabf4a25e98797e30ea4feb6e597f2}\label{class_simulation_1_1_systems_1_1_alveolus_component_behavior_ad3cabf4a25e98797e30ea4feb6e597f2}} 
+\mbox{\hyperlink{class_simulation_1_1_systems_1_1_gas_exchange_1_1_hb_saturation}{Hb\+Saturation}} {\bfseries Hb\+Saturation}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_component_behavior_adb48660ec8e973b9d8e07c27a205e8ca}\label{class_simulation_1_1_systems_1_1_alveolus_component_behavior_adb48660ec8e973b9d8e07c27a205e8ca}} 
+\mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_blood_outflow}{Blood\+Outflow}} {\bfseries Blood\+Outflow}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_alveolus_component_behavior_a380d3f5ad5ab371ad22ccb96472ec3ae}\label{class_simulation_1_1_systems_1_1_alveolus_component_behavior_a380d3f5ad5ab371ad22ccb96472ec3ae}} 
+\mbox{\hyperlink{class_simulation_1_1_systems_1_1_output_1_1_output_collector}{Output\+Collector}} {\bfseries Output\+Collector}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A base class for simulation components that are also Mono\+Behaviors, searching for an Instance either as a serialized reference or upwards in the hierarchy. It provides easy access to other simulation components through \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}. When Set\+Instance is called with a new \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}, Listeners are automatically updated, e.\+g to react to changes in the Parameter\+Data instance. Furthermore, if a Parameter\+Data instance is already set on the \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}, the Handle\+Reset method is called. This allows to react to any kind of initialization by properly implementing Handle\+Reset. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Simulation/\+Systems/Alveolus\+Component\+Behavior.\+cs\end{DoxyCompactItemize}

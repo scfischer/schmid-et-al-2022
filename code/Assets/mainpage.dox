@@ -1,0 +1,21 @@
+/** \mainpage
+  *
+  * \section subject Modeling Gas Exchange in the Human Alveolus
+  * <br>
+  * 
+  * \section abstract Abstract
+  *
+  * The human respiratory system can be functionally separated into a conducting zone and a respiratory zone.
+  * The latter is characterized by alveoli, tissue structures that enable close proximity of inhaled air to
+  * deoxygenated blood coming from the heart resulting in gas exchange. The uptake of oxygen is divided into
+  * two processes: the diffusion of oxygen molecules from inhaled air through the thin tissue barrier into the
+  * blood plasma and the red blood cells and then their binding to hemoglobin molecules.
+  * These events are influenced by a variety of factors and other processes.
+  * 
+  * The objective of this project is to visualize the lung tissue at the scale of an alveolus and simulate gas
+  * exchange. We start by considering the most substantial influences on diffusion: Partial pressures of the
+  * respective gases, morphometric properties of the diffusion barrier and blood volume and velocity. The goal
+  * is to convey an understanding of the tight relation between structure and function and how different conditions
+  * and processes can affect gas exchange.
+  * 
+  */

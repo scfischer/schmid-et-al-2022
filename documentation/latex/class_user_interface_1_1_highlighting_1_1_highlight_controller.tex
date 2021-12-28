@@ -1,0 +1,69 @@
+\hypertarget{class_user_interface_1_1_highlighting_1_1_highlight_controller}{}\doxysection{User\+Interface.\+Highlighting.\+Highlight\+Controller Class Reference}
+\label{class_user_interface_1_1_highlighting_1_1_highlight_controller}\index{UserInterface.Highlighting.HighlightController@{UserInterface.Highlighting.HighlightController}}
+
+
+The class which controls highlighting of objects based on GUI interactions.  
+
+
+Inheritance diagram for User\+Interface.\+Highlighting.\+Highlight\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_user_interface_1_1_highlighting_1_1_highlight_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_highlight_controller_af897ac4ae7141893fbbdd05fc645bc32}{Activate\+Highlight}} (\mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_highlight_trigger}{Highlight\+Trigger}} caller)
+\begin{DoxyCompactList}\small\item\em Called by a \mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_highlight_trigger}{Highlight\+Trigger}} to enable the highlighting in the script associated with this trigger in highlight\+Associations. If the trigger has a string with additional parameters assigned, it is passed to the associated target. Disables other currently active highlights. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_highlight_controller_a3fe0218b9f43c1671ceb753a2abbd6db}{Deactivate\+Highlight}} (\mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_highlight_trigger}{Highlight\+Trigger}} caller)
+\begin{DoxyCompactList}\small\item\em Called by a \mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_highlight_trigger}{Highlight\+Trigger}} to disable the highlighting in the script associated with this trigger in highlight\+Associations. If the trigger has a string with additional parameters assigned, it is passed to the associated target. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The class which controls highlighting of objects based on GUI interactions. 
+
+It allows assigning pairs of \mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_highlight_trigger}{Highlight\+Trigger}}s and targets that should have highlighting toggles, thus allowing to re-\/use scripts for triggers without having to modify the code. Instead, the trigger element is assigned to Highlighting\+Association.\+trigger of highlight\+Associations together with its intended target. The Highlighting\+Association.\+target needs to implement \mbox{\hyperlink{interface_user_interface_1_1_highlighting_1_1_i_highlightable}{IHighlightable}}, the methods of which are invoked by this class to turn highlighting on or off. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_user_interface_1_1_highlighting_1_1_highlight_controller_af897ac4ae7141893fbbdd05fc645bc32}\label{class_user_interface_1_1_highlighting_1_1_highlight_controller_af897ac4ae7141893fbbdd05fc645bc32}} 
+\index{UserInterface.Highlighting.HighlightController@{UserInterface.Highlighting.HighlightController}!ActivateHighlight@{ActivateHighlight}}
+\index{ActivateHighlight@{ActivateHighlight}!UserInterface.Highlighting.HighlightController@{UserInterface.Highlighting.HighlightController}}
+\doxysubsubsection{\texorpdfstring{ActivateHighlight()}{ActivateHighlight()}}
+{\footnotesize\ttfamily void User\+Interface.\+Highlighting.\+Highlight\+Controller.\+Activate\+Highlight (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_highlight_trigger}{Highlight\+Trigger}}}]{caller }\end{DoxyParamCaption})}
+
+
+
+Called by a \mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_highlight_trigger}{Highlight\+Trigger}} to enable the highlighting in the script associated with this trigger in highlight\+Associations. If the trigger has a string with additional parameters assigned, it is passed to the associated target. Disables other currently active highlights. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caller} & The caller which invokes this method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if \mbox{\hyperlink{interface_user_interface_1_1_highlighting_1_1_i_highlightable_a70e2e912e328c2b89e1aae6b8754c8ce}{IHighlightable.\+Enable\+Highlights}} was invoked on the associated target, false if no target was found for the provided caller. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_user_interface_1_1_highlighting_1_1_highlight_controller_a3fe0218b9f43c1671ceb753a2abbd6db}\label{class_user_interface_1_1_highlighting_1_1_highlight_controller_a3fe0218b9f43c1671ceb753a2abbd6db}} 
+\index{UserInterface.Highlighting.HighlightController@{UserInterface.Highlighting.HighlightController}!DeactivateHighlight@{DeactivateHighlight}}
+\index{DeactivateHighlight@{DeactivateHighlight}!UserInterface.Highlighting.HighlightController@{UserInterface.Highlighting.HighlightController}}
+\doxysubsubsection{\texorpdfstring{DeactivateHighlight()}{DeactivateHighlight()}}
+{\footnotesize\ttfamily void User\+Interface.\+Highlighting.\+Highlight\+Controller.\+Deactivate\+Highlight (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_highlight_trigger}{Highlight\+Trigger}}}]{caller }\end{DoxyParamCaption})}
+
+
+
+Called by a \mbox{\hyperlink{class_user_interface_1_1_highlighting_1_1_highlight_trigger}{Highlight\+Trigger}} to disable the highlighting in the script associated with this trigger in highlight\+Associations. If the trigger has a string with additional parameters assigned, it is passed to the associated target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em caller} & The caller which invokes this method.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if \mbox{\hyperlink{interface_user_interface_1_1_highlighting_1_1_i_highlightable_a9877baa2beee1870faad754120a637ea}{IHighlightable.\+Disable\+Highlights}} was invoked on the associated target, false if no target was found for the provided caller. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+User\+Interface/\+Highlighting/\+Scripts/Highlight\+Controller.\+cs\end{DoxyCompactItemize}

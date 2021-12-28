@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8958078967628691395
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 779.4463
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 309.84106
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237561204935638618, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5886144223750974180, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_Name
+      value: bloodpHRBC info Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8663996091368063692, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_text
+      value: "The pH of the blood and inside the erythrocytes is influenced by the
+        concentration of CO2 in the blood via the bicarbonate buffer system.\n\nAn
+        increased pCO2 leads to a shift of the bicarbonate buffer system to carbonic
+        acid, which in turn causes a decrease in pH (acidosis). \r\n\nA low pCO2
+        in the blood coincides with a high blood pH (alkalosis).\n\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790693179741456995, guid: 6359fe8e0433d514890f238e3a9f09f0,
+        type: 3}
+      propertyPath: m_text
+      value: 'Incoming Deoxygenated Blood: pH Inside Erythroctes'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6359fe8e0433d514890f238e3a9f09f0, type: 3}

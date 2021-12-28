@@ -1,0 +1,86 @@
+\hypertarget{class_user_interface_1_1_multi_instance_1_1_instance_menu}{}\doxysection{User\+Interface.\+Multi\+Instance.\+Instance\+Menu Class Reference}
+\label{class_user_interface_1_1_multi_instance_1_1_instance_menu}\index{UserInterface.MultiInstance.InstanceMenu@{UserInterface.MultiInstance.InstanceMenu}}
+
+
+This class organizes simultaneous simulation of multiple Alveolus\+Controller instances.  
+
+
+Inheritance diagram for User\+Interface.\+Multi\+Instance.\+Instance\+Menu\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_user_interface_1_1_multi_instance_1_1_instance_menu}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_multi_instance_1_1_instance_menu_a964e4be318e2a15c67771785d37ca65b}\label{class_user_interface_1_1_multi_instance_1_1_instance_menu_a964e4be318e2a15c67771785d37ca65b}} 
+delegate void {\bfseries Instance\+Creation\+Allowed\+Changed\+Event} (bool is\+Allowed)
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_multi_instance_1_1_instance_menu_a4ef43938e15d81de13c2daee9190845d}\label{class_user_interface_1_1_multi_instance_1_1_instance_menu_a4ef43938e15d81de13c2daee9190845d}} 
+delegate void {\bfseries All\+Instances\+Reset\+Event} ()
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_multi_instance_1_1_instance_menu_ad52af6c3d1275d742476d9a181525105}\label{class_user_interface_1_1_multi_instance_1_1_instance_menu_ad52af6c3d1275d742476d9a181525105}} 
+void {\bfseries Apply\+Parameter\+Set\+To\+Current\+Instance} ()
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_multi_instance_1_1_instance_menu_a28617204fc15e0b0a95b7cf136a4198e}\label{class_user_interface_1_1_multi_instance_1_1_instance_menu_a28617204fc15e0b0a95b7cf136a4198e}} 
+void {\bfseries Duplicate\+Instance} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} template)
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_multi_instance_1_1_instance_menu_a80d0df9172438b3e6eb86ed73ee62fa9}\label{class_user_interface_1_1_multi_instance_1_1_instance_menu_a80d0df9172438b3e6eb86ed73ee62fa9}} 
+void {\bfseries Add\+Instance} ()
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_multi_instance_1_1_instance_menu_ae053218bdb0c637527f3632e9a50f793}\label{class_user_interface_1_1_multi_instance_1_1_instance_menu_ae053218bdb0c637527f3632e9a50f793}} 
+void {\bfseries Delete\+Instance} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} alveolus)
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_multi_instance_1_1_instance_menu_ad389467639c4c35d2f966f726c853da0}\label{class_user_interface_1_1_multi_instance_1_1_instance_menu_ad389467639c4c35d2f966f726c853da0}} 
+void {\bfseries Select\+Instance} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} alveolus\+To\+Select)
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_multi_instance_1_1_instance_menu_ab007293686c27a519fdf57e060e920da}\label{class_user_interface_1_1_multi_instance_1_1_instance_menu_ab007293686c27a519fdf57e060e920da}} 
+void {\bfseries Toggle\+Pause} ()
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_multi_instance_1_1_instance_menu_a8df2d2018f6414947a162ab986b4b0e9}\label{class_user_interface_1_1_multi_instance_1_1_instance_menu_a8df2d2018f6414947a162ab986b4b0e9}} 
+void {\bfseries Reset\+Instances} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_multi_instance_1_1_instance_menu_a04d7818625bcb7a5c25344e801269e03}\label{class_user_interface_1_1_multi_instance_1_1_instance_menu_a04d7818625bcb7a5c25344e801269e03}} 
+\mbox{\hyperlink{class_user_interface_1_1_multi_instance_1_1_instance_provider}{Instance\+Provider}} {\bfseries instance\+Provider}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_multi_instance_1_1_instance_menu_a4a865daf28143fd35928054dca21498a}\label{class_user_interface_1_1_multi_instance_1_1_instance_menu_a4a865daf28143fd35928054dca21498a}} 
+Game\+Object {\bfseries simulation\+Prefab}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_multi_instance_1_1_instance_menu_a549a378c4f2e42d1bae4adcb58f12f5c}\label{class_user_interface_1_1_multi_instance_1_1_instance_menu_a549a378c4f2e42d1bae4adcb58f12f5c}} 
+Game\+Object {\bfseries instance\+Button\+Prefab}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_multi_instance_1_1_instance_menu_a630ac27c88af231d43876b73634eaef2}\label{class_user_interface_1_1_multi_instance_1_1_instance_menu_a630ac27c88af231d43876b73634eaef2}} 
+\mbox{\hyperlink{class_simulation_1_1_parameters_data}{Parameters\+Data}} {\bfseries parameters\+Template}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_multi_instance_1_1_instance_menu_a437784d94b28c88d079aec045df5919f}\label{class_user_interface_1_1_multi_instance_1_1_instance_menu_a437784d94b28c88d079aec045df5919f}} 
+Game\+Object {\bfseries instance\+Button\+Container}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_multi_instance_1_1_instance_menu_a53b4cc62b2a640868b428920cc6206b3}\label{class_user_interface_1_1_multi_instance_1_1_instance_menu_a53b4cc62b2a640868b428920cc6206b3}} 
+bool {\bfseries Instance\+Creation\+Allowed}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_multi_instance_1_1_instance_menu_a12ec1f1989cadf275bfa00f854bd9776}\label{class_user_interface_1_1_multi_instance_1_1_instance_menu_a12ec1f1989cadf275bfa00f854bd9776}} 
+Instance\+Creation\+Allowed\+Changed\+Event {\bfseries Instance\+Creation\+Allowed\+Changed}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_multi_instance_1_1_instance_menu_aaa3e712f246705d36aaa5531c1c85e42}\label{class_user_interface_1_1_multi_instance_1_1_instance_menu_aaa3e712f246705d36aaa5531c1c85e42}} 
+All\+Instances\+Reset\+Event {\bfseries All\+Instances\+Reset}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class organizes simultaneous simulation of multiple Alveolus\+Controller instances. 
+
+It keeps a list of active Alveolus\+Controller instances. The length of this list is confined to a limit defined in App\+Settings. Here, main functionalities such as creation of new instances, cloning or deletion of existing instances are implemented. Only the 3D model associated to the selected instance is visualized. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+User\+Interface/\+Multi\+Instance/\+Scripts/Instance\+Menu.\+cs\end{DoxyCompactItemize}

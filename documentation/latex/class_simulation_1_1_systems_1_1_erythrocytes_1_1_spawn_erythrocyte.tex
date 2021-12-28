@@ -1,0 +1,89 @@
+\hypertarget{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte}{}\doxysection{Simulation.\+Systems.\+Erythrocytes.\+Spawn\+Erythrocyte Class Reference}
+\label{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte}\index{Simulation.Systems.Erythrocytes.SpawnErythrocyte@{Simulation.Systems.Erythrocytes.SpawnErythrocyte}}
+
+
+Class to spawn new erythrocytes at the beginning of the inflow capillary.  
+
+
+Inheritance diagram for Simulation.\+Systems.\+Erythrocytes.\+Spawn\+Erythrocyte\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Path\+Creator \mbox{\hyperlink{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte_a2892069250258b5bd0c2aba7ba408522}{inflow\+Path}}
+\begin{DoxyCompactList}\small\item\em The {\ttfamily path\+Creator} paths along which the erythrocytes move. To be assigned in the editor.\end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte_aee7c5e33efb3c46ce40f3d09b2aa0610}\label{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte_aee7c5e33efb3c46ce40f3d09b2aa0610}} 
+Path\+Creator {\bfseries main\+Path}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte_ad3b55fe60a6d9f647dcfcc1ade767231}\label{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte_ad3b55fe60a6d9f647dcfcc1ade767231}} 
+Path\+Creator {\bfseries outflow\+Path}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte_aa0472d1ce09122c08738b600e73bc40f}\label{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte_aa0472d1ce09122c08738b600e73bc40f}} 
+const float {\bfseries slo\+Mo} = 40
+\begin{DoxyCompactList}\small\item\em This factor sets the simulation time in relation to the time, the physiological process would take. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte_a86b02e4e78dafb736dea8281bafae422}{Handle\+Reset}} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance)
+\item 
+override void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte_a48514e0e13fecd522c14d81525a56a4d}{Handle\+Parameters\+Updated}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte_abc53da80bc8cf6c6622f7bcd4bd4bc1b}\label{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte_abc53da80bc8cf6c6622f7bcd4bd4bc1b}} 
+bool {\bfseries Visuals\+Enabled}\hspace{0.3cm}{\ttfamily  \mbox{[}getset\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enable or disable erythrocyte visuals, i.\+e. mesh. For when the alveolus is in or out of focus. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to spawn new erythrocytes at the beginning of the inflow capillary. 
+
+\mbox{\hyperlink{namespace_simulation_1_1_systems_1_1_erythrocytes}{Erythrocytes}} are spawned on the path of the inflow capillary. This class also stores the respective instances of the following paths (main and outflow), in order to pass them to the \mbox{\hyperlink{class_simulation_1_1_systems_1_1_erythrocytes_1_1_erythrocyte_movement}{Erythrocyte\+Movement}} component of child erythrocytes. Initially, erythrocytes are spread along the path with the appropriate distance resembling the current blood volume, i.\+e. erythrocyte density. As the erythrocytes move, new clones are spawned at the start of the path in appropriate distance to the previous erythrocyte. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte_a48514e0e13fecd522c14d81525a56a4d}\label{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte_a48514e0e13fecd522c14d81525a56a4d}} 
+\index{Simulation.Systems.Erythrocytes.SpawnErythrocyte@{Simulation.Systems.Erythrocytes.SpawnErythrocyte}!HandleParametersUpdated@{HandleParametersUpdated}}
+\index{HandleParametersUpdated@{HandleParametersUpdated}!Simulation.Systems.Erythrocytes.SpawnErythrocyte@{Simulation.Systems.Erythrocytes.SpawnErythrocyte}}
+\doxysubsubsection{\texorpdfstring{HandleParametersUpdated()}{HandleParametersUpdated()}}
+{\footnotesize\ttfamily override void Simulation.\+Systems.\+Erythrocytes.\+Spawn\+Erythrocyte.\+Handle\+Parameters\+Updated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_component_behavior}{Simulation.\+Systems.\+Alveolus\+Component\+Behavior}}.
+
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte_a86b02e4e78dafb736dea8281bafae422}\label{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte_a86b02e4e78dafb736dea8281bafae422}} 
+\index{Simulation.Systems.Erythrocytes.SpawnErythrocyte@{Simulation.Systems.Erythrocytes.SpawnErythrocyte}!HandleReset@{HandleReset}}
+\index{HandleReset@{HandleReset}!Simulation.Systems.Erythrocytes.SpawnErythrocyte@{Simulation.Systems.Erythrocytes.SpawnErythrocyte}}
+\doxysubsubsection{\texorpdfstring{HandleReset()}{HandleReset()}}
+{\footnotesize\ttfamily override void Simulation.\+Systems.\+Erythrocytes.\+Spawn\+Erythrocyte.\+Handle\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}}]{instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_component_behavior}{Simulation.\+Systems.\+Alveolus\+Component\+Behavior}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte_a2892069250258b5bd0c2aba7ba408522}\label{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte_a2892069250258b5bd0c2aba7ba408522}} 
+\index{Simulation.Systems.Erythrocytes.SpawnErythrocyte@{Simulation.Systems.Erythrocytes.SpawnErythrocyte}!inflowPath@{inflowPath}}
+\index{inflowPath@{inflowPath}!Simulation.Systems.Erythrocytes.SpawnErythrocyte@{Simulation.Systems.Erythrocytes.SpawnErythrocyte}}
+\doxysubsubsection{\texorpdfstring{inflowPath}{inflowPath}}
+{\footnotesize\ttfamily Path\+Creator Simulation.\+Systems.\+Erythrocytes.\+Spawn\+Erythrocyte.\+inflow\+Path}
+
+
+
+The {\ttfamily path\+Creator} paths along which the erythrocytes move. To be assigned in the editor.
+
+\mbox{\hyperlink{namespace_simulation_1_1_systems_1_1_erythrocytes}{Erythrocytes}} are only spawned on \mbox{\hyperlink{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte_a2892069250258b5bd0c2aba7ba408522}{inflow\+Path}}. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Simulation/\+Systems/\+Erythrocytes/Spawn\+Erythrocyte.\+cs\end{DoxyCompactItemize}

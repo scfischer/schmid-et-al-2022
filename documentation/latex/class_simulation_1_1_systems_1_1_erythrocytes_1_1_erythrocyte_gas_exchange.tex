@@ -1,0 +1,62 @@
+\hypertarget{class_simulation_1_1_systems_1_1_erythrocytes_1_1_erythrocyte_gas_exchange}{}\doxysection{Simulation.\+Systems.\+Erythrocytes.\+Erythrocyte\+Gas\+Exchange Class Reference}
+\label{class_simulation_1_1_systems_1_1_erythrocytes_1_1_erythrocyte_gas_exchange}\index{Simulation.Systems.Erythrocytes.ErythrocyteGasExchange@{Simulation.Systems.Erythrocytes.ErythrocyteGasExchange}}
+
+
+This class handles oxygen uptake and oxygen-\/saturation-\/related tinting of erythrocytes as they pass through the capillary.  
+
+
+Inheritance diagram for Simulation.\+Systems.\+Erythrocytes.\+Erythrocyte\+Gas\+Exchange\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_simulation_1_1_systems_1_1_erythrocytes_1_1_erythrocyte_gas_exchange}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_erythrocytes_1_1_erythrocyte_gas_exchange_a4f01dda77615c6ac8c07c46d7c9a86d4}\label{class_simulation_1_1_systems_1_1_erythrocytes_1_1_erythrocyte_gas_exchange_a4f01dda77615c6ac8c07c46d7c9a86d4}} 
+void {\bfseries Deliver\+Saturation\+Difference} ()
+\begin{DoxyCompactList}\small\item\em Takes stock of changes in oxygen saturation across the main capillary where gas exchange takes place. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_erythrocytes_1_1_erythrocyte_gas_exchange_ac5bcca7f96d0310264c1ef6646fc2c6b}{Handle\+Reset}} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance)
+\item 
+override void \mbox{\hyperlink{class_simulation_1_1_systems_1_1_erythrocytes_1_1_erythrocyte_gas_exchange_a5e900b751e1ef050f5cf0766167ac3ad}{On\+Destroy}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+This class handles oxygen uptake and oxygen-\/saturation-\/related tinting of erythrocytes as they pass through the capillary. 
+
+\mbox{\hyperlink{namespace_simulation_1_1_systems_1_1_erythrocytes}{Erythrocytes}} are the main agents for transporting oxygen in the blood stream. Along their passage through the alveolar capillaries -\/ represented in this model by their their traversal of a single, representative capillary -\/ oxygen diffuses from the blood plasma into the erythrocytes where it binds to haemoglobin.
+
+The changing oxygen saturation of haemoglobin is visually represented by change of tint of the erythrocyte. The exact tint results from an interpolation between the oxygenated and deoxygenated tint colours, blended with the model material\textquotesingle{}s initial tint colour. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_erythrocytes_1_1_erythrocyte_gas_exchange_ac5bcca7f96d0310264c1ef6646fc2c6b}\label{class_simulation_1_1_systems_1_1_erythrocytes_1_1_erythrocyte_gas_exchange_ac5bcca7f96d0310264c1ef6646fc2c6b}} 
+\index{Simulation.Systems.Erythrocytes.ErythrocyteGasExchange@{Simulation.Systems.Erythrocytes.ErythrocyteGasExchange}!HandleReset@{HandleReset}}
+\index{HandleReset@{HandleReset}!Simulation.Systems.Erythrocytes.ErythrocyteGasExchange@{Simulation.Systems.Erythrocytes.ErythrocyteGasExchange}}
+\doxysubsubsection{\texorpdfstring{HandleReset()}{HandleReset()}}
+{\footnotesize\ttfamily override void Simulation.\+Systems.\+Erythrocytes.\+Erythrocyte\+Gas\+Exchange.\+Handle\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}}]{instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_component_behavior}{Simulation.\+Systems.\+Alveolus\+Component\+Behavior}}.
+
+\mbox{\Hypertarget{class_simulation_1_1_systems_1_1_erythrocytes_1_1_erythrocyte_gas_exchange_a5e900b751e1ef050f5cf0766167ac3ad}\label{class_simulation_1_1_systems_1_1_erythrocytes_1_1_erythrocyte_gas_exchange_a5e900b751e1ef050f5cf0766167ac3ad}} 
+\index{Simulation.Systems.Erythrocytes.ErythrocyteGasExchange@{Simulation.Systems.Erythrocytes.ErythrocyteGasExchange}!OnDestroy@{OnDestroy}}
+\index{OnDestroy@{OnDestroy}!Simulation.Systems.Erythrocytes.ErythrocyteGasExchange@{Simulation.Systems.Erythrocytes.ErythrocyteGasExchange}}
+\doxysubsubsection{\texorpdfstring{OnDestroy()}{OnDestroy()}}
+{\footnotesize\ttfamily override void Simulation.\+Systems.\+Erythrocytes.\+Erythrocyte\+Gas\+Exchange.\+On\+Destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_component_behavior}{Simulation.\+Systems.\+Alveolus\+Component\+Behavior}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+Simulation/\+Systems/\+Erythrocytes/Erythrocyte\+Gas\+Exchange.\+cs\end{DoxyCompactItemize}

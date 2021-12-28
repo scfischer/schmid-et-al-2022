@@ -1,0 +1,43 @@
+\hypertarget{namespace_simulation_1_1_systems_1_1_erythrocytes}{}\doxysection{Simulation.\+Systems.\+Erythrocytes Namespace Reference}
+\label{namespace_simulation_1_1_systems_1_1_erythrocytes}\index{Simulation.Systems.Erythrocytes@{Simulation.Systems.Erythrocytes}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_simulation_1_1_systems_1_1_erythrocytes_1_1_erythrocyte_gas_exchange}{Erythrocyte\+Gas\+Exchange}}
+\begin{DoxyCompactList}\small\item\em This class handles oxygen uptake and oxygen-\/saturation-\/related tinting of erythrocytes as they pass through the capillary. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_simulation_1_1_systems_1_1_erythrocytes_1_1_erythrocyte_movement}{Erythrocyte\+Movement}}
+\item 
+class \mbox{\hyperlink{class_simulation_1_1_systems_1_1_erythrocytes_1_1_spawn_erythrocyte}{Spawn\+Erythrocyte}}
+\begin{DoxyCompactList}\small\item\em Class to spawn new erythrocytes at the beginning of the inflow capillary. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_simulation_1_1_systems_1_1_erythrocytes_aabe8222bf473f8eab461abc1b48e6f34}{Assign\+Path}} \{ {\bfseries Inflow}
+, {\bfseries Main}
+, {\bfseries Outflow}
+ \}
+\begin{DoxyCompactList}\small\item\em Controls the erythrocyte\textquotesingle{}s movement along the paths through the representative capillary. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_simulation_1_1_systems_1_1_erythrocytes_aabe8222bf473f8eab461abc1b48e6f34}\label{namespace_simulation_1_1_systems_1_1_erythrocytes_aabe8222bf473f8eab461abc1b48e6f34}} 
+\index{Simulation.Systems.Erythrocytes@{Simulation.Systems.Erythrocytes}!AssignPath@{AssignPath}}
+\index{AssignPath@{AssignPath}!Simulation.Systems.Erythrocytes@{Simulation.Systems.Erythrocytes}}
+\doxysubsubsection{\texorpdfstring{AssignPath}{AssignPath}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_simulation_1_1_systems_1_1_erythrocytes_aabe8222bf473f8eab461abc1b48e6f34}{Simulation.\+Systems.\+Erythrocytes.\+Assign\+Path}}}
+
+
+
+Controls the erythrocyte\textquotesingle{}s movement along the paths through the representative capillary. 
+
+The erythrocyte moves along the paths in the following order\+: inflow, main, then outflow. As soon as it reaches the end of one path, it is positioned at the start of the next path which it and subsequenty follows. At the end of the main path, \mbox{\hyperlink{class_simulation_1_1_systems_1_1_erythrocytes_1_1_erythrocyte_gas_exchange}{Erythrocyte\+Gas\+Exchange}} is instructed to take stock of oxygen saturation changes across the main capillary. Once it reaches the end of outflow path, it is destroyed.
+
+This class uses the plugin Path\+Creation as a tool to orientate along a {\ttfamily  Vertex\+Path}. Depending on {\ttfamily  End\+Of\+Path\+Instruction/c\texorpdfstring{$>$}{>}, it i.\+a. offers the possibility to access the position and rotation of a transform travelling a given distance along the given path. }
+
+{\ttfamily }
+
+{\ttfamily }
+
+{\ttfamily  Three different modes that control at which part of the simulation the erythrocyte is and how it has to move. }
+
+{\ttfamily  }

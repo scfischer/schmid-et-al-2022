@@ -1,0 +1,95 @@
+\hypertarget{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot}{}\doxysection{User\+Interface.\+Output.\+Plots.\+Multi\+Plot Class Reference}
+\label{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot}\index{UserInterface.Output.Plots.MultiPlot@{UserInterface.Output.Plots.MultiPlot}}
+
+
+Base class for all plotting classes. It provides organization for plotting results of multiple simulation instances in the same graph. The plots are updated at each frame.  
+
+
+Inheritance diagram for User\+Interface.\+Output.\+Plots.\+Multi\+Plot\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.954545cm]{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_afe43aaba3829ae289697ef426489aa84}\label{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_afe43aaba3829ae289697ef426489aa84}} 
+void {\bfseries Awake} ()
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_a4972b5a354bdce83f82086d93364a5a2}\label{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_a4972b5a354bdce83f82086d93364a5a2}} 
+virtual void {\bfseries Register\+Instance} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance)
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_aa6f1bcb0610083d67606b46ca9c96060}\label{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_aa6f1bcb0610083d67606b46ca9c96060}} 
+virtual void {\bfseries Unregister\+Instance} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance)
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_af51e241f840da84d024138ac37d4962c}\label{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_af51e241f840da84d024138ac37d4962c}} 
+void {\bfseries Set\+Dirty} ()
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_ad92ecee23ee1d7ee22b023d0703225fb}\label{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_ad92ecee23ee1d7ee22b023d0703225fb}} 
+virtual void {\bfseries Prepare\+Plot} ()
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_a32109ed2c226fe651e72f3a05cc4641d}\label{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_a32109ed2c226fe651e72f3a05cc4641d}} 
+virtual void {\bfseries Update\+Data\+Set} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance, Plotter.\+Graph\+Descriptor graph)
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_a220f1596a07972d5f612d1c316e49518}\label{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_a220f1596a07972d5f612d1c316e49518}} 
+virtual void {\bfseries Handle\+Instance\+Defocus} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance)
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_a64aec257ed0eb81d329c573147344139}\label{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_a64aec257ed0eb81d329c573147344139}} 
+virtual void {\bfseries Handle\+Instance\+Focus} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance)
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_a1bfd7fa6f2c85f135ab634e9eb982cfe}\label{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_a1bfd7fa6f2c85f135ab634e9eb982cfe}} 
+virtual void {\bfseries Handle\+Instance\+Pause} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance)
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_aaeecb2039d5d543ab903e578e4fce3a5}\label{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_aaeecb2039d5d543ab903e578e4fce3a5}} 
+virtual void {\bfseries Handle\+Instance\+Reset} (\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}} instance)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_a2b663ff2b2234cd11d749fb38bf483fd}\label{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_a2b663ff2b2234cd11d749fb38bf483fd}} 
+\mbox{\hyperlink{class_support_1_1_app_settings}{App\+Settings}} {\bfseries app\+Settings}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_a35e74649f1f40cc4dbf13464dadf93fd}\label{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_a35e74649f1f40cc4dbf13464dadf93fd}} 
+TMP\+\_\+\+Text {\bfseries x\+Label}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_ac9cedadc256b7b968a9d999438557723}\label{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_ac9cedadc256b7b968a9d999438557723}} 
+TMP\+\_\+\+Text {\bfseries y\+Label}
+\item 
+readonly Dictionary$<$ \mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}, Plotter.\+Graph\+Descriptor $>$ \mbox{\hyperlink{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_ac35ae33d11a5bc69415288567d60dc39}{instance\+Graph\+Map}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_a03dc790abef38101b530614083e3fcfe}\label{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_a03dc790abef38101b530614083e3fcfe}} 
+\mbox{\hyperlink{class_user_interface_1_1_multi_instance_1_1_instance_color_map}{Instance\+Color\+Map}} {\bfseries Instance\+Color\+Map}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_a503d1f93a0fdba541408ae93c85ad74e}\label{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_a503d1f93a0fdba541408ae93c85ad74e}} 
+Plotter {\bfseries Plotter}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_acd9242c7e5fd6d4fd54fd68c0553907f}\label{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_acd9242c7e5fd6d4fd54fd68c0553907f}} 
+Plot\+Axis\+Labels {\bfseries Axis\+Labels}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for all plotting classes. It provides organization for plotting results of multiple simulation instances in the same graph. The plots are updated at each frame. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_ac35ae33d11a5bc69415288567d60dc39}\label{class_user_interface_1_1_output_1_1_plots_1_1_multi_plot_ac35ae33d11a5bc69415288567d60dc39}} 
+\index{UserInterface.Output.Plots.MultiPlot@{UserInterface.Output.Plots.MultiPlot}!instanceGraphMap@{instanceGraphMap}}
+\index{instanceGraphMap@{instanceGraphMap}!UserInterface.Output.Plots.MultiPlot@{UserInterface.Output.Plots.MultiPlot}}
+\doxysubsubsection{\texorpdfstring{instanceGraphMap}{instanceGraphMap}}
+{\footnotesize\ttfamily readonly Dictionary$<$\mbox{\hyperlink{class_simulation_1_1_systems_1_1_alveolus_controller}{Alveolus\+Controller}}, Plotter.\+Graph\+Descriptor$>$ User\+Interface.\+Output.\+Plots.\+Multi\+Plot.\+instance\+Graph\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{            \textcolor{keyword}{new} Dictionary<AlveolusController, Plotter.GraphDescriptor>()}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Assets/\+User\+Interface/\+Output/\+Plots/\+Scripts/Multi\+Plot.\+cs\end{DoxyCompactItemize}

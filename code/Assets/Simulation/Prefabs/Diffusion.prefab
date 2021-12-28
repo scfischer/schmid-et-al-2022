@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6575814904817288199
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2752805134097686902}
+  - component: {fileID: 4228709849853563033}
+  m_Layer: 0
+  m_Name: Diffusion
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2752805134097686902
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6575814904817288199}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -5.2, z: 26.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4228709849853563033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6575814904817288199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2382be0ea54c50c4485083897e2dd142, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alveolus: {fileID: 0}
+  crossingParticlesLimit: 10000
+  spawnInDistanceFromCapillaryCenter: 4
+  disappearDistancePastCapillaryCenter: 0.6
+  o2ParticleColor: {r: 1, g: 0, b: 0, a: 1}
+  co2ParticleColor: {r: 0, g: 0, b: 1, a: 1}
+  capillaryPathCreator: {fileID: 0}
+  prefab: {fileID: 1268239146646588432, guid: c705918296ec7e544ab7858f1767dfc6, type: 3}
