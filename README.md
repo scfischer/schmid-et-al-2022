@@ -3,10 +3,11 @@
 
 This is the source code of the _Alvin_ simulation software version 1.1, published in: 
 
-Schmid K, Knote A, Mück A, Pfeiffer K, Mammen S von, Fischer SC. 2021. Interactive, Visual Simulation of a 
-Spatio-Temporal Model of Gas Exchange in the Human Alveolus. doi: 10.1101/2021.09.15.460416.
+Schmid, Kerstin, Andreas Knote, Alexander Mück, Keram Pfeiffer, Sebastian von Mammen, 
+and Sabine C. Fischer. 2022. ‘Interactive, Visual Simulation of a Spatio-Temporal Model of 
+Gas Exchange in the Human Alveolus’. _Frontiers in Bioinformatics_ 1.
 
-The latest version of _Alvin_ is always available at http://go.uniwue.de/alvin.
+You can download the application from the binaries folder or from http://go.uniue.de/alvin.
 If you use _Alvin_ or the source code, please cite the publication above.
 
 
@@ -20,12 +21,12 @@ If you use _Alvin_ or the source code, please cite the publication above.
 
 ```
 RepositoryRoot/
-    ├── binaries             // Archives (.zip) of the most recent build
+    ├── binaries             // Archives (.zip) of builds for Windows, macOS and Linux
     ├── code 		     // The project source code
     ├── documentation        // Doxygen manual 
     ├── publication
     │   ├── poster           // PDF of the presentation poster
-    │   └── paper            // PDF of the preprint 
+    │   └── paper            // PDF of the publication 
     ├── LICENSE              // License terms
     ├── NOTICES              // Attributions  
     ├── README.md            // This file
