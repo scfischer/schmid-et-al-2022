@@ -7,7 +7,7 @@ Schmid, Kerstin, Andreas Knote, Alexander Mück, Keram Pfeiffer, Sebastian von M
 and Sabine C. Fischer. 2022. ‘Interactive, Visual Simulation of a Spatio-Temporal Model of 
 Gas Exchange in the Human Alveolus’. _Frontiers in Bioinformatics_ 1.
 
-You can download the application from the binaries folder or from http://go.uniue.de/alvin.
+You can download the application from the binaries folder.
 If you use _Alvin_ or the source code, please cite the publication above.
 
 
